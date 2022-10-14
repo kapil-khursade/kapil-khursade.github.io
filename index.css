@@ -85,6 +85,15 @@ body{
     }
   }
 
+  /* mobile button hidden */
+  #mobHome{
+    visibility: hidden;
+  }
+
+  .mobBar{
+    display: none;
+  }
+
   /* Navbar */
   #navBar{
     width: 100%;
