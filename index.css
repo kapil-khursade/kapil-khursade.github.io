@@ -1,185 +1,19 @@
-/* Boiler plate */
-* { 
-	box-sizing: border-box;
-}
-html, body {
-	min-height: 100%;
-	background: #fff;
-	color: #000;
-}
-	/* sets the body height of the browser, so that backgrounds and div heights work correctly. Color and background will almost certainly be altered; they are just placeholders */
-	
-body {
-	font-size: 1.4rem;
-	text-rendering: optimizeLegibility;
+/* Boiler plate code  */
+
+/* Background ripple effect */
+body{
     background-color: rgb(34, 32, 32);
-}
-	/* sets the base font size for the document; turns on kerning pairs and ligatures */
-	
-body, ul, ol, dl {
-	margin: 0;
-}
-article, aside, audio, 
-footer, header, nav, section, video {
-	display: block; 
-	}
-	
-	/* ensures that older browsers will display HTML5 elements correctly */
-	
-h1 {
-	font-size: 1.4rem;
-}
-	/* begins to set up font sizes relative to base rem – h1 has been used as an example */
-	
-p { 
-	-ms-word-break: break-all;
-	word-break: break-all;
-	word-break: break-word;
-	-moz-hyphens: auto;
-	-webkit-hyphens: auto;
-	-ms-hyphens: auto;
-	hyphens: auto;
-} 
-	/* sets hyphenation by default on paragraphs */
-	
-textarea { 
-	resize: vertical;
-}
- /* changes textarea resizing from "both" (UA default) to vertical only */
- 
-table { border-collapse: collapse; }
-td {
-	padding: .5rem;
-}
-	/* causes tables to actually look like tables */
-	
-img { 
-	border: none;
-	max-width: 100%;
-}
-	/* removes outlines from linked images (for older browsers and IE), sets up images for responsive design layout */
-	
-input[type="submit"]::-moz-focus-inner, 
-	input[type="button"]::-moz-focus-inner {
-		border : 0px;
-	}
-
-	/* removes the OS X appearance from HTML5 search inputs and submit buttons when viewed in Safari */
-	
-input:required:after {
-	color: #f00;
-	content: " *";
-}
-	/* sets up required form fields with the conventional following red asterix */
-input[type="email"]:invalid { 
-	background: #f00;
-}
-	/* causes a visual alert in browsers that do client-side checking of HTML5 email field – this may already be the default in some browsers. */
-	
-.right { 
-	float: right;
-	margin-left: 2rem;
-	clear: right;
-}
-.left { 
-	float: left;
-	margin-right: 2rem;
-	clear: left;
-}
-	/* allows a quick shortcut for floating elements left and right while avoiding the “float quirk” problem */
-	
-sub, sup { 
-	line-height: 0;
-}
-    /* sets superscript and subscript text so that it doesn't throw off leading for elements in which they are included */
-*{
-      border: 1px solid transparent;
-}
-
-#mainBox{
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    position: relative;
-    z-index: 1;
-}
-
-#mainBox>img{
-    width: 150px;
-    border-radius: 100%;
-    margin-bottom: 40px;
-}
-
-#mainBox>h1{
-    font-size: 54px;
-    margin-top: -10px;
-    margin-bottom: -10px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: 100;
     font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
 }
-
-#mainBox>p{
-    font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
-}
-
-#logo img{
-    width: 40px;
-    cursor: pointer;
-}
-
-#logo img:hover{
-  transform: scale(1.2);
-}
-
-#logo{
-  width: 400px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-
-#logoName{
-    display: flex;
-    font-size: 12px;
-    width: 400px;
-    justify-content: space-between;
-}
-
-#logoName>div{
-    visibility: hidden;
-    width: max-content;
-    padding: 1%;
-    text-align: center;
-    border-radius: 8px;
-    background-color: gray;
-}
-
-.visibleName{
-    visibility: visible;
-}
-
-.linkdin:hover{
-    visibility: visible;
-}
-
-/* bacground */
-  
-  .ripple-background{
+.ripple-background{
     background-color: transparent;
- 
   }
   
   .circle{
-    position: absolute;
+    position: fixed;
     border-radius: 50%;
     background: white;
-    animation: ripple 15s infinite;
+    animation: ripple 11s infinite;
     box-shadow: 0px 0px 1px 0px #5e6468;
   }
   
@@ -219,18 +53,18 @@ sub, sup {
   }
   
   .shade1{
-    opacity: 0.2;
+    opacity: 0.1;
   }
   .shade2{
-    opacity: 0.5;
+    opacity: 0.3;
   }
   
   .shade3{
-    opacity: 0.7;
+    opacity: 0.5;
   }
   
   .shade4{
-    opacity: 0.8;
+    opacity: 0.7;
   }
   
   .shade5{
@@ -243,7 +77,7 @@ sub, sup {
     }
     
     50%{
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
     
     100%{
@@ -251,171 +85,120 @@ sub, sup {
     }
   }
 
-  #intro{
+  /* Navbar */
+  #navBar{
     width: 100%;
-    height: 700px;
-    position: relative;
+    height: 80px;
+    position: fixed;
     z-index: 1;
-    text-align: center;
+    top: 0px;
+    left: 0px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: rgb(34, 32, 32);
   }
 
-.reveal-text,
-.reveal-text::after {
-	animation-delay: var(--animation-delay, 2s);
-	animation-iteration-count: var(--iterations, 1);
-	animation-duration: var(--duration, 800ms);
-	animation-fill-mode: both;
-	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+  #navBar>div{
+    margin: 0px 30px 0px 30px;
+    cursor: pointer;
+  }
+
+  #navBar>div:hover{
+    transform: scale(1.1);
+  }
+
+  /* THis is about me section */
+  
+#mainBox{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
 }
 
-.reveal-text {
-	--animation-delay: var(--delay, 10);
-	--animation-duration: var(--duration, 800ms);
-	--animation-iterations: var(--iterations, 1);
-	position: relative;
-	/* font-size: 10vw; */
-	animation-name: clip-text;
-	color: white;
-	white-space: nowrap;
-	cursor: default;
-	
+#mainBox>img{
+    width: 150px;
+    border-radius: 100%;
+    margin-bottom: 40px;
 }
 
-.reveal-text::after {
-		content: "";
-		position: absolute;
-		z-index: 999;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: white;
-		transform: scaleX(0);
-		transform-origin: 0 50%;
-		pointer-events: none;
-		animation-name: text-revealer;
-	}
-
-
-@keyframes clip-text {
-	from {
-		clip-path: inset(0 100% 0 0);
-	}
-	to {
-		clip-path: inset(0 0 0 0);
-	}
+#mainBox>h1{
+    font-size: 54px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
-
-@keyframes text-revealer {
-	
-	0%, 50% {
-		transform-origin: 0 50%;
-	}
-	
-	60%, 100% {
-		transform-origin: 100% 50%;		
-	}
-
-	
-	60% {
-		transform: scaleX(1);
-	}
-	
-	100% {
-		transform: scaleX(0);
-	}
+#mainBox>p{
+    font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 24px;
 }
 
-/* About me */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:700);
-.cont_intro {
-  max-width: 720px;
-  margin: 150px auto;
-  cursor: pointer;
-  background-color: transparent;
-  /* border: 1px solid red; */
+#logo img{
+    width: 35px;
+    cursor: pointer;
 }
 
-h2 {
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 60px;
-  letter-spacing: -0.05em;
-  text-align: center;
-  line-height: 1;
-  color: white;
-  font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  transform-origin: center bottom;
-  transition: all 0.4s;
-}
-h2:first-of-type {
-  transform-origin: center top;
-}
-.cont_intro:hover h2 {
-  transform: scaleY(0);
+#logo img:hover{
+  transform: scale(1.1);
 }
 
-.text_intro {
-  position: absolute;
-  top: 25%;
-  right: 0;
-  left: 0;
-  font-family: "Open Sans";
-  transform: translateY(-50%);
-  transition: all 0.3s;
-}
-.text_intro:before, .text_intro:after {
-  display: block;
-  margin: 50px 0;
-  height: 10px;
-  background-color:  white;
-  opacity: 0.75;
-  content: "";
-  transition: all 0.3s;
-}
-.text_intro:hover {
-  background: white;
-}
-.text_intro:hover:before, .text_intro:hover:after {
-  margin: 0;
-}
-
-.inner_intro {
-  padding: 0 60px;
-  max-height: 0;
-  overflow: hidden;
-  background: white;
-  line-height: 1.5;
-  font-size: 18px;
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  text-align: justify;
-  transform: scale(0);
-  transition: all 0.3s;
-}
-.cont_intro:hover .inner_intro {
-  padding: 60px;
-  max-height: 400px;
-  transform: scale(1);
-}
-
-/* technologies */
-#techno{
+#logo{
+  width: 380px;
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 25px;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
-#techno>img{
-  width: 50px;
+#logoName{
+    display: flex;
+    width: max-content;
+    font-size: 12px;
+    justify-content: space-between;
 }
 
-#techno>img:hover{
-  transform: scale(1.4);
+#logoName>div{
+    visibility: hidden;
+    width: min-content;
+    padding: 1%;
+    text-align: center;
+    border-radius: 8px;
+    background-color: gray;
+    position: relative;
+}
+#logoName>div:nth-child(1){
+    left:  -75px;
+}
+#logoName>div:nth-child(2){
+    left:  -44px;
+}
+#logoName>div:nth-child(3){
+    left:  -25px;
+}
+#logoName>div:nth-child(4){
+    left:  -8px;
+}
+#logoName>div:nth-child(5){
+    left:  17px;
+}
+#logoName>div:nth-child(6){
+    left:  47px;
 }
 
-#intro{
-  height: 300px;
+.visibleName{
+    visibility: visible;
+}
 
+.linkdin:hover{
+    visibility: visible;
 }
