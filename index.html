@@ -23,8 +23,8 @@
         <div class="bar2"></div>
         <div class="bar3"></div>
         <div class="mobBar">
-            <div>Home</div>
-            <div>About Me</div>
+            <div><a href="#mainBox">Home</a></div>
+            <div><a href="#aboutMe">About Me</a></div>
             <div>Skills</div>
             <div>Projects</div>
             <div>Contact</div>
@@ -33,14 +33,14 @@
       </div>
 
     <!-- This is navbar -->
-    <div id="navBar">
-        <div>Home</div>
-        <div>About Me</div>
-        <div>Skills</div>
-        <div>Projects</div>
-        <div>Contact</div>
-        <div>Resume</div>
-    </div>    
+    <ul id="navBar">
+        <li><a href="#mainBox">Home</a></li>
+        <li><a href="#aboutMe">About Me</a></li>
+        <li>Skills</li>
+        <li>Projects</li>
+        <li>Contact</li>
+        <li>Resume</li>
+    </ul>    
     
     <!-- This is about me section -->
     <div id="mainBox">
@@ -59,13 +59,24 @@
             <div>Email</div>
             <div>Linkdin</div>
             <div>Instagram</div>
-            <div>Medium</div>   
-            <div>Netlify</div>
+            <div>Medium</div> 
+            <div>Netlify</div>  
             <div>Github</div>
         </div>         
     </div>
 
+    <!-- About me section -->
+    <div id="aboutMe">
+       <Span>About Me</Span>
+       <div>
+       <q> Aspiring Full-Stack Web Developer with the touch of creativity and passion for developing interactive
+        websites. I love order and commited to quality, exprimenting and experinencing in what I beilve
+        firmly.
+       </q>
+       </div>
+    </div>
 
+   <div id="theme" onclick="changeTheme(this)">Jhon Wick</div>
 </body>
 </html>
 
