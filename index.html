@@ -4,6 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kapil Khursade</title>
+    <!-- To show the logo in the title of website -->
+		<link
+        rel="icon"
+        href="https://i.postimg.cc/c4ZJTgYP/kklogo-no-bg.png"
+        type="image/x-icon"
+    />
+    
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="responive.css">
 </head>
@@ -17,7 +24,7 @@
         <div class='circle small shade5'></div>
     </div>
 
-      <!-- home button for mobile -->
+      <!-- home button for mobile navbar-->
       <div id="mobHome" class="container" onclick="myFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -33,17 +40,17 @@
       </div>
 
     <!-- This is navbar -->
-    <ul id="navBar">
+    <div id="navBar">
         <li><a href="#mainBox">Home</a></li>
         <li><a href="#aboutMe">About Me</a></li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
-        <li>Resume</li>
-    </ul>    
+        <li><a href="">Skills</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Resume</a></li>
+    </div>    
     
     <!-- This is about me section -->
-    <div id="mainBox">
+    <section id="mainBox" class="tablegraphview">
         <img src='https://i.postimg.cc/vZTK09pv/photome-2.jpg' border='0' alt='photome-2'/>
         <h1  class="reveal-text">Kapil Khursade</h1>
         <p  class="reveal-text">Full Stack Web Developer</p>
@@ -63,18 +70,20 @@
             <div>Netlify</div>  
             <div>Github</div>
         </div>         
-    </div>
+    </section>
 
     <!-- About me section -->
-    <div id="aboutMe">
+    <section id="aboutMe" class="tablegraphview">
        <Span>About Me</Span>
        <div>
-       <q> Aspiring Full-Stack Web Developer with the touch of creativity and passion for developing interactive
+       <q> <span>Hi</span>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2F3abca4654c434fa76870c06909682c3e%2Ftenor.gif%3Fitemid%3D17554626&f=1&nofb=1&ipt=c6395e8af7e2019738c91594f309b080baca3e8f7f642d51ff9f028d52fbfbe0&ipo=images" alt="wave">
+        I'm a Full-Stack Web Developer with the touch of creativity and passion for developing interactive
         websites. I love order and commited to quality, exprimenting and experinencing in what I beilve
         firmly.
        </q>
        </div>
-    </div>
+    </section>
 
    <div id="theme" onclick="changeTheme(this)">Jhon Wick</div>
 </body>

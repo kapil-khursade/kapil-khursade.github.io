@@ -171,6 +171,7 @@
 
     #logoName>div{
         visibility: visible;
+        background-color: transparent;
     }
 
     #logoName>div:nth-child(1){
