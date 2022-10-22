@@ -7,7 +7,11 @@
     /* Navbar */
     #navBar{
         width: 100%;
-        font-size: 16px;
+        justify-content: space-between;
+    }
+    #navBar li{
+        font-size: 12px;
+        
     }
 
     /* Ṃain box */
@@ -61,10 +65,30 @@
     }
     
     #aboutMe>div{
-        width: 350px;
+        width: 300px;
         font-size: 16px;
         left: 35%;
     }
+
+       /* Skill section */
+       #skills>span{
+        font-size: 34px;
+      }
+      
+      #skills>div{
+          width: 300px;
+          font-size: 16px;
+          left: 35%;
+      }
+
+      #skills .front{
+        padding-left: 10px;
+      }
+
+      #skills .front div{
+        width: 80px;
+      }
+  
 
     }
 
@@ -199,14 +223,36 @@
   }
   
   #aboutMe>div{
-      width: 150px;
+      width: 230px;
       font-size: 12px;
       line-height: 16px;
       text-align: left;
       left: 15%;
   }
 
+  /* skills section */
+  #skills>span{
+    font-size: 34px;
+  }
+  
+  #skills>div{
+      width: 230px;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: left;
+      left: 15%;
+  }
 
+  #skills .front{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 50px);
+    padding-left: 40px;
+  }
+
+  #skills .front div{
+    width: 60px;
+    height: 60px;
+  }
 }
 
 

@@ -10,6 +10,10 @@
         href="https://i.postimg.cc/c4ZJTgYP/kklogo-no-bg.png"
         type="image/x-icon"
     />
+
+    <!-- jquery script -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="responive.css">
@@ -32,10 +36,10 @@
         <div class="mobBar">
             <div><a href="#mainBox">Home</a></div>
             <div><a href="#aboutMe">About Me</a></div>
-            <div>Skills</div>
-            <div>Projects</div>
-            <div>Contact</div>
-            <div>Resume</div>
+            <div><a href="#skills">Skills</div>
+            <div><a href="#project">Projects</a></div>
+            <div><a href="#contact">Contact</a></div>
+            <div><a href="#resume">Resume</a></div>
         </div>  
       </div>
 
@@ -43,14 +47,14 @@
     <div id="navBar">
         <li><a href="#mainBox">Home</a></li>
         <li><a href="#aboutMe">About Me</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Resume</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
     </div>    
     
     <!-- This is about me section -->
-    <section id="mainBox" class="tablegraphview">
+    <section id="mainBox" >
         <img src='https://i.postimg.cc/vZTK09pv/photome-2.jpg' border='0' alt='photome-2'/>
         <h1  class="reveal-text">Kapil Khursade</h1>
         <p  class="reveal-text">Full Stack Web Developer</p>
@@ -73,17 +77,74 @@
     </section>
 
     <!-- About me section -->
-    <section id="aboutMe" class="tablegraphview">
+    <section id="aboutMe" >
        <Span>About Me</Span>
        <div>
-       <q> <span>Hi</span>
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2F3abca4654c434fa76870c06909682c3e%2Ftenor.gif%3Fitemid%3D17554626&f=1&nofb=1&ipt=c6395e8af7e2019738c91594f309b080baca3e8f7f642d51ff9f028d52fbfbe0&ipo=images" alt="wave">
-        I'm a Full-Stack Web Developer with the touch of creativity and passion for developing interactive
-        websites. I love order and commited to quality, exprimenting and experinencing in what I beilve
-        firmly.
-       </q>
+      
        </div>
+       <div class="cardBox">
+        <div class="cardBoxFull">
+            <div class="front">
+                <q> <span>Hi</span>
+                    <img id="wave" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Femoji.gg%2Fassets%2Femoji%2Fwavegif_1860.gif&f=1&nofb=1&ipt=b9ebe3c2cb7329abf8bf2baaf7d7740c14494cfc0b35f59f2cb8bd0faebbb974&ipo=images" alt="wave">
+                    I'm a Full-Stack Web Developer with the touch of creativity and passion for developing interactive
+                    websites. I love order and commited to quality, exprimenting and experinencing in what I beilve
+                    firmly.
+                   </q>
+            </div>
+            <div class="back">
+                <span><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetdrawings.com%2Ffree-icon-bw%2Flocation-icon-png-transparent-2.png&f=1&nofb=1&ipt=1b2ab8e597b413d89b5ea0b4ac24c00320e80c2e16fe49864cf317919fea79fd&ipo=images" alt="location">Bhusawal, Maharashtra.</span>
+                <span><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_401303.png&f=1&nofb=1&ipt=b373c9c05f1b4db624cdb2429b85f42ba15e43bb66288c592ff1d20f4ce8e480&ipo=images" alt="age">25years</span>
+            </div>
+        </div>
+    </div>
     </section>
+
+    <!-- Skills section -->
+    <section id="skills">
+        <span>Skills</span>
+        <div class="cardBox">
+            <div class="cardBoxFull">
+                <div class="front">
+                    <!-- here will be the logo of the skills -->
+                   <div>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pikpng.com%2Fpngl%2Fb%2F146-1469146_java-logo-transparent-png.png&f=1&nofb=1&ipt=3fc7b3062ee4959c92d9dcb2fde072c355fd6f7d6e56cd6c8adb73095fa55764&ipo=images" alt="JAVA">
+                   </div>
+                   <div>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fmysql-5-logo-png-transparent.png&f=1&nofb=1&ipt=e9bc4ff677e2d08aac726862abffd9db40f5d5eb68db6dd1407f032144c8d29f&ipo=images" alt="MySQL">
+                   </div>
+                   <div>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fspring-3-logo-png-transparent.png&f=1&nofb=1&ipt=c097c28917e88dd8ce02e2ca0759f5d7c6e06b88a853f4820e287b51fa06a46f&ipo=images" alt="springbot">
+                   </div>
+                   <div>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F98%2F0b%2Fa0%2F980ba07956ccfdf81b5060b1795cdcad.png&f=1&nofb=1&ipt=4cc93c7ac8292231be8b67fcf8379431d8239dc53746bdaecad294977770084c&ipo=images" alt="javasript">
+                   </div>
+                   <div>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipground.com%2Fimages%2Fhtml5-logo-2.png&f=1&nofb=1&ipt=0a30135ab2709372017f9fcb406c94881ac9381790232ac32efa5050c0aa2474&ipo=images" alt="html">
+                   </div>
+                   <div>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipartcraft.com%2Fimages%2Fhtml5-logo-vector-7.png&f=1&nofb=1&ipt=bd2b42b797ecf51102e79b3e8c00ddd231dd16963cb7cbf2221ed21404e7142b&ipo=images" alt="CSS">
+                   </div>
+                </div>
+                <div class="back">
+                    <!-- here will be the few lines about the skill mentionng the soft skills -->
+                    <q>Hoaning continously my knowledge of the  backend technology like JAVA, MySQL and SpringBoot and frontend
+                        technology like JAVASCRIPT, HTML and CSS. Along with that polishing my problem solving skill by regorusly practicing Data 
+                        Structure and Algorithem. Hands On experience of using tools like VSCODE, GitHub, Intelji and Spring Tool Suit.
+                    </q>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="project"></section>
+
+    <!-- Contact Section -->
+    <section id="contact"></section>
+
+    <!-- This is to download resume -->
+    <section id="resume"></section>
 
    <div id="theme" onclick="changeTheme(this)">Jhon Wick</div>
 </body>

@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        main{
+            width: 480px;
+            height: 100vh;
+            margin: auto;
+            background-image: url('https://i.postimg.cc/MpKyFkJq/main.png');
+        }
+        #target{
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            border: none;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            position: relative;
+            border-radius: 5px;
+            top: 5px;
+            left: 5px;
+        }
+        #scBoard{
+            width: max-content;
+            height: auto;
+            text-align: center;
+            margin: auto;
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+            margin-bottom: 20px;
+            display: grid;
+            grid-template-columns: 120px 50px;
+            grid-template-rows: repeat(3, 40px);
+            position: relative;
+            top: -65px;
+            right: -140px;
+        }
+        #scBoard>div{
+            text-align: center;
+            line-height: 50px;
+        }
+        #shot{
+            display: none;
+            width: 100px;
+            height: 50px;
+            margin: auto;
+            background-color: red;
+            border: none;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+        #curShot{
+            width: 200px;
+            height: 100px;
+            margin: 50px auto;
+            background-color: transparent;
+            color: red;
+            font-size: 24px;
+            text-align: center;
+            line-height: 100px;
+        }
+        #ba{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: red;
+            position: relative;
+            /* visibility: hidden; */
+        }
+
+        .baAni{
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%{
+                visibility: visible;
+                left: 95%;
+                bottom: -25%;
+            }
+            /* 25%{
+                left: 80%;
+                bottom: -22%;
+            } */
+            50%{
+                left: 50%;
+                bottom: -20%;
+            }
+            75%{
+                left: 25%;
+                bottom: -18%;
+            }
+            100%{
+                left: 95%;
+                bottom: 80%; 
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+
+    <div id="target" onclick="genrateTarget(this)">Click To Play</div>
+
+    <div id="scBoard">
+        <div>Runs</div>
+        <div id="score">0</div>
+        <div>Wickets</div>
+        <div id="wk">0</div>
+        <div>Ball Remaing</div>
+        <div id="balls">0</div>
+    </div>
+
+    <div id="shot" onclick="playShot()">
+       Play Shot!
+    </div>
+
+    <div id="curShot"></div>
+    <div id="ba" class="baAni"></div>
+    </main>
+
+</body>
+</html>
+<script src="cricket.js"></script>
