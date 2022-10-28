@@ -5,13 +5,68 @@
     /* Styles */
 
     /* Navbar */
-    #navBar{
-        width: 100%;
-        justify-content: space-between;
+     /* Navbar */
+
+     #mobHome{
+        visibility: visible;
+        position:fixed;
     }
-    #navBar li{
-        font-size: 12px;
-        
+    .container {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        z-index: 1;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 30px;
+        height: 3px;
+        background-color: rgb(248, 248, 248);
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        transform: translate(0, 9px) rotate(-45deg);
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+        transform: translate(0, -9px) rotate(45deg);
+      }
+  
+      .mobBar{
+        visibility: hidden;
+        position: absolute;
+        z-index: -1;
+        background-color: rgb(34, 32, 32);
+        width: 160px;
+        height: 100vh;
+        top: -10px;
+        left: -10px;
+        padding-top: 35px;
+        padding-bottom: 20px;
+        border-bottom-right-radius: 20px;
+      }
+
+      .mobBarVis{
+        display:block;
+        visibility: visible;
+      }
+       
+      .mobBar>div{
+        color: white;
+        margin:25px 0px 15px 25px ;
+      }
+      .mobBar>div>a{
+        color: white;
+        text-decoration: none;
+      }
+
+
+    #navBar{
+        visibility: hidden;
     }
 
     /* Ṃain box */
@@ -88,8 +143,67 @@
       #skills .front div{
         width: 80px;
       }
-  
 
+      /* project section */
+      #project>span{
+        font-size: 34px;
+      }
+
+      #project>div{
+       display: grid;
+       width: 90%;
+       grid-template-columns: repeat(2, 300px);
+       grid-template-rows: repeat(2, 200px);
+       row-gap: 15px;
+       left: -20%;
+       top: 5%;
+      }
+
+      #project>div>div{
+        width: 300px;
+        height: 200px;
+      }
+
+      #project>div .front img{
+        height: 60%;
+      }
+
+      #project>div .back p{
+        font-size: 14px;
+        margin: 5px 0px 5px 0px;
+      }
+
+      /* contact section */
+      #contact>span{
+        font-size: 34px;
+      }
+
+     #contact>form{
+        width: 80%;
+        left: 0%;
+        margin: auto;
+     }
+
+     
+    #contact>form>button{
+        width: 40%;
+    }
+
+     /*Resume  */
+     #resume>span{
+        font-size: 34px;
+     }
+
+     #resume>div{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 230px;
+     }
+
+    /* creidt */
+    #credit{
+        bottom: -30%;
+    }
     }
 
 /* Mobile scresn */
@@ -133,7 +247,7 @@
         z-index: -1;
         background-color: rgb(34, 32, 32);
         width: 160px;
-        height: max-content;
+        height: 100vh;
         top: -10px;
         left: -10px;
         padding-top: 35px;
@@ -159,7 +273,6 @@
     #navBar{
         visibility: hidden;
     }
-        
 
      /* Ṃain box */
      #mainBox{
@@ -224,6 +337,7 @@
   
   #aboutMe>div{
       width: 230px;
+      height: 200px;
       font-size: 12px;
       line-height: 16px;
       text-align: left;
@@ -245,7 +359,7 @@
 
   #skills .front{
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 50px);
+    grid-template-rows: repeat(3, 40px);
     padding-left: 40px;
   }
 
@@ -253,6 +367,74 @@
     width: 60px;
     height: 60px;
   }
+
+   /* project section */
+   #project>span{
+    font-size: 34px;
+  }
+
+   #project>div{
+    display: grid;
+    width: auto;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(3, 150px);
+    row-gap: 15px;
+    left: -40%;
+    top: 5%;
+   }
+
+   #project>div>div{
+     width: 300px;
+     height: 150px;
+   }
+
+   #project>div .front img{
+     height: 60%;
+     width: 80%;
+   }
+
+   #project>div .front h2{
+    font-size: 16px;
+   }
+
+   #project>div .back p{
+     font-size: 12px;
+     margin: 4px 0px 4px 0px;
+     line-height: 12px;
+   }
+
+  /* contact section */
+  #contact>span{
+    font-size: 34px;
+  }
+   
+  #contact>form{
+    width: 80%;
+    left: 0%;
+    margin: auto;
+  }
+  
+  #contact>form>button{
+    width: 40%;
+  }
+
+/*Resume  */
+#resume>span{
+    font-size: 34px;
+ }
+
+ #resume>div{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 230px;
+    left: 0%;
+    margin: auto;
+ }
+
+ /* creidt */
+ #credit{
+    bottom: -30%;
+ }
 }
 
 
