@@ -200,13 +200,12 @@
     <section id="contact">
         <span>Contact Me</span>
         <form action="https://formsubmit.co/kapilkhursade.210@gmail.com" method="POST">
-            <input type="text" placeholder="Your Name" required>
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_autoresponse" value="Thanks for contacting. I will reach you back soon">
-            <input type="email" placeholder="Your Email" required>
-            <textarea type="text" placeholder="Your Message"></textarea>
+            <input type="text" name="name" required placeholder="Your Name">
+            <input type="email" name="email" required placeholder="Your Email To Get Back To You">
+            <textarea type="text" name="Your Message" required placeholder="Your Message"></textarea>
+            <input type="hidden" name="_next" value="https://kapil-khursade.github.io/thanks.html">
             <button type="submit">Send</button>
-        </form>
+       </form>
     </section>
 
     <!-- This is to download resume -->

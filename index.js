@@ -29,3 +29,5 @@ function changeTheme(x){
    localStorage.setItem("themeI", i);
 }
 
+// Current
+
