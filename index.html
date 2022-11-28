@@ -10,6 +10,10 @@
         href="https://i.postimg.cc/c4ZJTgYP/kklogo-no-bg.png"
         type="image/x-icon"
     />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+  />
 
     <!-- jquery script -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -221,14 +225,38 @@
             <a href="kapil_khursade_resume - Copy.pdf" download><button>Download Reusme</button></a>
         </div>
 
-        <article id="credit">
+        <div class="calendar">
+            <!-- Loading stuff  -->
+           Loading the data just for you.
+        </div> --> 
+
+          <article id="credit">
             <img src="https://i.postimg.cc/c4ZJTgYP/kklogo-no-bg.png" alt="logo">
             <span>MADE WITH PASSION</span>
         </article>
     </section>
+    
+ 
+  
 
    <div id="theme" onclick="changeTheme(this)">Jhon Wick</div>
 </body>
 </html>
 
 <script src="index.js"></script>
+<script
+src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<script>
+    GitHubCalendar(".calendar", "kapil-khursade");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "kapil-khursade", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "kapil-khursade", {
+       proxy (username) {
+         return fetch(`https://your-proxy.com/github?user=${kapil-khursade}`)
+       }
+    }).then(r => r.text())
+</script>

@@ -200,6 +200,10 @@
         height: 230px;
      }
 
+    /* gitstat */
+    .calendar{
+      display: none;
+    }
     /* creidt */
     #credit{
         bottom: -30%;
@@ -429,6 +433,11 @@
     height: 230px;
     left: 0%;
     margin: auto;
+ }
+
+ /* gitstat */
+ .calendar{
+  display: none;
  }
 
  /* creidt */

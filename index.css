@@ -574,7 +574,7 @@ font-size: 14px;
   right: -10%;
 }
 
-#resume>div{
+#resume>div:nth-child(2){
 width: 40%;
 display: flex;
 justify-content: space-between;
@@ -608,13 +608,27 @@ left: 50%;
   font-size: 10px;
 }
 
+ /* gitstat */
+ .calendar{
+  width: 60%;
+  height: min-content;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  bottom:-170px;
+ }
+
+
 /* credits */
 #credit{
   width: 120px;
   position: relative;
-  bottom: -55%;
+  bottom: -150px;
   margin: auto;
   text-align: center;
+}
+
+#credit>img{
+  rotate: -30deg;
 }
 
 #credit>img{
