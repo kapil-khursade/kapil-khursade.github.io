@@ -570,7 +570,7 @@ font-size: 14px;
   color: white;
   font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
   position: relative;
-  top: 10%;
+  top: 16%;
   right: -10%;
 }
 
@@ -614,7 +614,7 @@ left: 50%;
   height: min-content;
   background-color: rgb(255, 255, 255);
   position: relative;
-  bottom:-170px;
+  bottom:-150px;
  }
 
 
