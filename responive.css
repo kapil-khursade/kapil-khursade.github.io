@@ -1,7 +1,7 @@
 /* Responding */
 
 /* Tab */
-@media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
+@media only screen and (min-device-width : 375px) and (max-device-width : 768px) {
     /* Styles */
 
     /* Navbar */
@@ -136,13 +136,19 @@
           left: 35%;
       }
 
-      #skills .front{
-        padding-left: 10px;
+      #skills .back{
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: repeat(3,70);
+        gap: 10px;
+        padding-top: 50px;
       }
-
-      #skills .front div{
-        width: 80px;
+    
+      #skills .back b{
+        top: 10px;
+        width: 60%;
+        left: 20%;
       }
+  
 
       /* project section */
       #project>span{
@@ -211,7 +217,7 @@
     }
 
 /* Mobile scresn */
-@media only screen and (min-device-width : 0px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 0px) and (max-device-width : 375px) {
     /* Styles */
 
     /* Navbar */
@@ -361,15 +367,18 @@
       left: 15%;
   }
 
-  #skills .front{
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 40px);
-    padding-left: 40px;
+  #skills .back{
+    grid-template-columns: repeat(2, 60px);
+    grid-template-rows: repeat(4,60px);
+    gap: 20px;
+    padding-top: 30px;
   }
 
-  #skills .front div{
-    width: 60px;
-    height: 60px;
+  #skills .back b{
+    top: 10px;
+    width: 50%;
+    left: 27%;
+    font-size: 20px;
   }
 
    /* project section */
@@ -427,7 +436,7 @@
     font-size: 34px;
  }
 
- #resume>div{
+ #resume>div:nth-child(2){
     flex-direction: column;
     justify-content: space-between;
     height: 230px;

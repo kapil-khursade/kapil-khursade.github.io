@@ -335,7 +335,9 @@ body{
     text-align: center;
     border-radius: 8px;
     background : linear-gradient(229deg, #e6ebea, #71787c);
+    color: black;
     position: relative;
+    font-weight: 600;
 }
 #logoName>div:nth-child(1){
     left:  -75px;
@@ -440,25 +442,36 @@ body{
   border-radius: 15px;
   perspective: 1000px
 }
-#skills .front{
- display: grid;  
- grid-template-columns: repeat(3, 1fr);
- grid-template-rows: repeat(2, 100px);
- row-gap: 60px;
- padding: 30px 0px 0px 50px;
+
+#skills .front>img{
+  width: 80%;
+  margin: 30px auto;
 }
-#skills .front div{
-  width: 100px;
-  height: 120px;
-;
+
+#skills .front b{
+  font-size: 30px;
 }
-#skills .front div img{
+
+#skills .back{
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 15px;
+  row-gap: 35px;
+  padding-top: 60px;
+}
+
+#skills .back img{
   width: 100%;
-  height: 100%;
 }
-#skills .back q{
-width: 90%;
-text-align: justify;
+
+#skills .back b{
+  position: absolute;
+  top: 20px;
+  width: 30%;
+  left: 35%;
+  font-size: 30px;
+  text-align: center;
 }
 
 /* This is projects sections */
