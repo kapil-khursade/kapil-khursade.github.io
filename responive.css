@@ -1,12 +1,8 @@
 /* Responding */
 
 /* Tab */
-@media only screen and (min-device-width : 375px) and (max-device-width : 768px) {
-    /* Styles */
-
+@media only screen and (min-device-width : 450px) and (max-device-width : 768px) {
     /* Navbar */
-     /* Navbar */
-
      #mobHome{
         visibility: visible;
         position:fixed;
@@ -69,6 +65,10 @@
         visibility: hidden;
     }
 
+    section>span{
+      font-size: 34px;
+    }
+
     /* Ṃain box */
     #mainBox{
         width: 100%;
@@ -115,41 +115,41 @@
     }
 
     /* About me section */
-    #aboutMe>span{
-      font-size: 34px;
-    }
-    
     #aboutMe>div{
         width: 80%;
         font-size: 16px;
         left: 10%;
     }
 
+    #techStack>div{
+      left: 5%;
+      width: 80%;
+    }
+
        /* Skill section */
-       #skills>span{
-        font-size: 34px;
+      #skill>div{
+        width: 80%;
+      }
+
+      #skill>div>div:nth-child(1){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+      }
+
+      #skill>div>div:nth-child(3){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+      }
+
+       /* gitstat */
+      .calendar{
+        display: none;
       }
       
-      #skills>div{
-        width: 80%;
-        font-size: 16px;
-        left: 10%;
-      }
-
-      #skills .back{
-        grid-template-columns: repeat(3, 70px);
-        grid-template-rows: repeat(3,70);
-        gap: 10px;
-        padding-top: 50px;
-      }
-    
-      #skills .back b{
-        top: 10px;
-        width: 60%;
-        left: 20%;
-      }
-  
-
       /* project section */
       #project>span{
         font-size: 34px;
@@ -168,51 +168,20 @@
       }
 
       /* contact section */
-      #contact>span{
-        font-size: 34px;
-      }
-
      #contact>form{
         width: 80%;
         left: 0%;
         margin: auto;
      }
-
      
     #contact>form>button{
         width: 40%;
     }
 
-     /*Resume  */
-     #resume>span{
-        font-size: 34px;
-     }
-
-     #resume>div:nth-child(2){
-        left: 10%;
-        width: 80%;
-     }
-
-     #resume>div>a>button{
-      width: 100px;
-      height: 50px;
-      font-size: 16px;
-     }
-
-    /* gitstat */
-    .calendar{
-      margin-top: 50px;
-      width: 95%;
-      margin-left: 2.5%;
-    }
-    /* creidt */
-    #credit{
-        bottom: -30%;
-    }
     }
 
 /* Mobile scresn */
-@media only screen and (min-device-width : 0px) and (max-device-width : 375px) {
+@media only screen and (min-device-width : 0px) and (max-device-width : 450px) {
     /* Styles */
 
     /* Navbar */
@@ -273,7 +242,6 @@
         color: white;
         text-decoration: none;
       }
-
 
     #nav-wrapper{
         visibility: hidden;
@@ -336,10 +304,6 @@
     }
     
   /* About me section */
-  #aboutMe>span{
-    font-size: 34px;
-  }
-  
   #aboutMe>div{
       width: 230px;
       height: 200px;
@@ -349,73 +313,67 @@
       left: 15%;
   }
 
+  /* Tech stack */
+  #techStack>div{
+    width: 80%;
+    left: 10%;
+  }
+
+  #techStack .back{
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(4, 50px);
+    gap: 15px;
+    row-gap: 35px;
+    padding-top: 60px;
+  }
+
+  #techStack .back b{
+    width: 40%;
+    text-align: center;
+    font-size: 24px;
+  }
+
   /* skills section */
-  #skills>span{
-    font-size: 34px;
-  }
-  
-  #skills>div{
-      width: 230px;
-      font-size: 12px;
-      line-height: 16px;
-      text-align: left;
-      left: 15%;
+  #skill>div>div:nth-child(1){
+    display: inline;
+    width: 80%;
+    margin: auto;
   }
 
-  #skills .back{
-    grid-template-columns: repeat(2, 60px);
-    grid-template-rows: repeat(4,60px);
-    gap: 20px;
-    padding-top: 30px;
+  #skill>div>div:nth-child(1)>div{
+    width: 80%;
+    margin: 0px auto 15px auto;
   }
 
-  #skills .back b{
-    top: 10px;
-    width: 50%;
-    left: 27%;
-    font-size: 20px;
+  #skill>div>div:nth-child(3){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap:20px;
   }
+
+  #skill>div>span:nth-child(4){
+    display: none;
+  }
+
+  /* gitstat */
+ .calendar{
+  display: none;
+ }
 
    /* project section */
-   #project>span{
-    font-size: 34px;
-  }
-
    #project>div{
-    display: grid;
-    width: auto;
-    grid-template-columns: 300px;
-    grid-template-rows: repeat(3, 150px);
-    row-gap: 15px;
-    left: -40%;
-    top: 5%;
+    display: inline;
    }
 
    #project>div>div{
-     width: 300px;
-     height: 150px;
-   }
-
-   #project>div .front img{
-     height: 60%;
      width: 80%;
+     height: auto;
+     margin: 0px auto 10% auto;
    }
 
-   #project>div .front h2{
-    font-size: 16px;
-   }
-
-   #project>div .back p{
-     font-size: 12px;
-     margin: 4px 0px 4px 0px;
-     line-height: 12px;
-   }
-
-  /* contact section */
-  #contact>span{
-    font-size: 34px;
-  }
-   
+  /* contact section */   
   #contact>form{
     width: 80%;
     left: 0%;
@@ -427,27 +385,18 @@
   }
 
 /*Resume  */
-#resume>span{
-    font-size: 34px;
- }
-
  #resume>div:nth-child(2){
-    flex-direction: column;
-    justify-content: space-between;
-    height: 230px;
-    left: 0%;
+    display: inline;
+    width: 100%;
+    height: 200px;
     margin: auto;
  }
 
- /* gitstat */
- .calendar{
-  display: none;
+ #resume>div:nth-child(2) button{
+  width: 50%;
+  margin: 15px 25%;
  }
 
- /* creidt */
- #credit{
-    bottom: -30%;
- }
 }
 
 
