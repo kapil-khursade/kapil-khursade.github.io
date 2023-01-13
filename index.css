@@ -15,6 +15,7 @@ body{
   
   .circle{
     position: fixed;
+    z-index: -1;
     border-radius: 50%;
     background: white;
     animation: ripple 8s infinite;
@@ -190,8 +191,8 @@ body{
   
     .nav a:link.active, a:visited.active, a:active.active {
       background: rgb(34, 32, 32);
-      background: -webkit-linear-gradient(-229deg, #71787c, #e6ebea);
-      background: linear-gradient(-229deg, #71787c, #e6ebea);
+      background: white;
+      background: white;
       color: black;
       font-weight: 600;
     }
@@ -226,11 +227,21 @@ body{
   }
 
   /* Common for allthe sctions */
-  section{
+ section{
     background-color: transparent;
     width: 100%;
     height: 100vh;
     margin: auto;
+  }
+
+  section>span{
+    font-size: 54px;
+    font-weight: 600;
+    color: white;
+    font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
+    position: relative;
+    top: 10%;
+    right: -10%;
   }
 
   
@@ -264,11 +275,11 @@ body{
 }
 
 .front {
-  background: linear-gradient(-229deg, #71787c, #e6ebea);
+  background: white;
 }
 
 .back {
-  background: linear-gradient(229deg, #e6ebea, #71787c);
+  background: white;
   color: black;
   transform: rotateY(180deg);
 }
@@ -289,6 +300,13 @@ body{
     width: 150px;
     border-radius: 100%;
     margin-bottom: 40px;
+    cursor: pointer;
+}
+
+#mainBox>img:hover{
+    border-radius: 30%;
+    transition: transform 500ms ease-in-out;
+    transform: scale(1.5);
 }
 
 #mainBox>h1{
@@ -334,7 +352,7 @@ body{
     padding: 1%;
     text-align: center;
     border-radius: 8px;
-    background : linear-gradient(229deg, #e6ebea, #71787c);
+    background : white;
     color: black;
     position: relative;
     font-weight: 600;
@@ -368,17 +386,6 @@ body{
 
 
 /* about me section */
-
-#aboutMe>span{
-  font-size: 54px;
-  font-weight: 600;
-  color: white;
-  font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
-  position: relative;
-  top: 15%;
-  right: -10%;
-}
-
 #aboutMe>div{
   width: 500px;
   height: 300px;
@@ -418,16 +425,6 @@ body{
 }
 
 /* Skills section */
-#skills>span{
-  font-size: 54px;
-  font-weight: 600;
-  color: white;
-  font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
-  position: relative;
-  top: 15%;
-  right: -10%;
-}
-
 #skills>div{
   width: 500px;
   height: 300px;
@@ -475,62 +472,49 @@ body{
 }
 
 /* This is projects sections */
-#project>span{
-  font-size: 54px;
-  font-weight: 600;
-  color: white;
-  font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
-  position: relative;
-  top: 10%;
-  right: -10%;
+#project{
+  height: fit-content;
 }
+
 #project>div{
-  display: flex;
-  position: relative;
-  left: -50%;
-  top: 25%;
-  width: 100%;
-  justify-content: space-around;
-}
-#project>div .front img{
-  width: 90%;
-  border-radius: 10px;
-}
-
-#project .back{
-font-size: 16px;
-}
-
-#project .back img{
-  width: 8%;
-  margin-right: 10px;
+  width: 90vw;
+  margin: 5vw auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 42.5vw);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 5vw;
+  row-gap: 30px;
 }
 
 #project>div>div{
-  width: 400px;
-  height: 300px;
-  background-color: transparent;
-  font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
-  font-size: 18px;
-  position: relative;
-  text-align: justify;
-  line-height: 25px;
-  top: 25%;
-  left: 50%;
-  border-radius: 15px;
+  background-color: white;
+  padding: 3%;
+  border-radius: 10px;
 }
+
+#project>div>div>img{
+  width: 100%;
+  height: 50%;
+  cursor: pointer;
+}
+
+#project>div>div>h3{
+  font-size: 28px;
+}
+
+#project>div>div button{
+  background-color: blue;
+  border: blue;
+  color: white;
+  width: 90px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 
 /* Message section */
-#contact>span{
-  font-size: 54px;
-  font-weight: 600;
-  color: white;
-  font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
-  position: relative;
-  top: 10%;
-  right: -10%;
-}
-
 #contact>form{
   width: 50%;
   position: relative;
@@ -544,7 +528,7 @@ height: 50px;
 margin-bottom: 15px;
 border-radius: 10px;
 border: none;
-background: linear-gradient(-229deg, #71787c, #e6ebea);
+background: white;
 font-size: 14px;
 }
 
@@ -557,7 +541,7 @@ font-size: 14px;
   width: 100%;
   border-radius: 10px;
   border: none;
-  background: linear-gradient(-229deg, #71787c, #e6ebea);
+  background: white;
   font-size: 14px;
 }
 
@@ -569,37 +553,30 @@ font-size: 14px;
 #contact>form>button{
   width: 20%;
   margin-top: 15px;
-  background: linear-gradient(-229deg, #71787c, #e6ebea);
+  background: blue;
+  color: white;
   height: 50px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  font-size: 20px;
 }
 
 /* Resume */
-#resume>span{
-  font-size: 54px;
-  font-weight: 600;
-  color: white;
-  font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
-  position: relative;
-  top: 16%;
-  right: -10%;
-}
-
 #resume>div:nth-child(2){
 width: 40%;
 display: flex;
 justify-content: space-between;
 position: relative;
 top: 20%;
-left: 50%;
+left: 30%;
 }
 
 #resume>div>a>button{
-  width: 200px;
-  height: 100px;
-  background: linear-gradient(-229deg, #71787c, #e6ebea);
+  width: 150px;
+  height: 80px;
+  color: white;
+  background: blue;
   border: none;
   border-radius: 10px;
   font-size: 20px;

@@ -120,9 +120,9 @@
     }
     
     #aboutMe>div{
-        width: 300px;
+        width: 80%;
         font-size: 16px;
-        left: 35%;
+        left: 10%;
     }
 
        /* Skill section */
@@ -131,9 +131,9 @@
       }
       
       #skills>div{
-          width: 300px;
-          font-size: 16px;
-          left: 35%;
+        width: 80%;
+        font-size: 16px;
+        left: 10%;
       }
 
       #skills .back{
@@ -156,27 +156,15 @@
       }
 
       #project>div{
-       display: grid;
-       width: 90%;
-       grid-template-columns: repeat(2, 300px);
-       grid-template-rows: repeat(2, 200px);
-       row-gap: 15px;
-       left: -20%;
-       top: 5%;
+        display: inline;
+        width: 100vw;
+        margin-top: 50px;
       }
 
       #project>div>div{
-        width: 300px;
-        height: 200px;
-      }
-
-      #project>div .front img{
-        height: 60%;
-      }
-
-      #project>div .back p{
-        font-size: 14px;
-        margin: 5px 0px 5px 0px;
+        width: 80%;
+        margin-left: 5%;
+        margin-bottom: 20px;
       }
 
       /* contact section */
@@ -200,15 +188,22 @@
         font-size: 34px;
      }
 
-     #resume>div{
-        flex-direction: column;
-        justify-content: space-between;
-        height: 230px;
+     #resume>div:nth-child(2){
+        left: 10%;
+        width: 80%;
+     }
+
+     #resume>div>a>button{
+      width: 100px;
+      height: 50px;
+      font-size: 16px;
      }
 
     /* gitstat */
     .calendar{
-      display: none;
+      margin-top: 50px;
+      width: 95%;
+      margin-left: 2.5%;
     }
     /* creidt */
     #credit{
