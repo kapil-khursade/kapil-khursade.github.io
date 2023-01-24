@@ -123,6 +123,10 @@
       margin-top: 25px;
     }
 
+    #skill>span:nth-child(5), #skill>div:nth-child(6){
+      display: none;
+    }
+
     }
 
 /* Mobile scresn */
