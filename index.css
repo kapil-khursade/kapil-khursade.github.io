@@ -1,6 +1,7 @@
 /* Boiler plate code  */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Background ripple effect */
@@ -229,10 +230,11 @@ body{
   /* Common for allthe sctions */
  section{
     background-color: transparent;
-    width: 100%;
+    width: 90vw;
     height: 100%;
     margin: auto;
     padding-top: 65px;
+    position:sticky;
   }
 
   section>span{
@@ -240,7 +242,6 @@ body{
     font-weight: 600;
     color: white;
     font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
-    margin: 0px 30px;
   }
 
   
@@ -286,29 +287,28 @@ body{
 
   /* THis is about me section */
   
-#mainBox{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    position: relative;
+#mainBox>div{
+    color: #fff;  
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
 }
 
-#mainBox>img{
+#mainBox>div>img{
     width: 150px;
     border-radius: 100%;
     margin-bottom: 40px;
     cursor: pointer;
 }
 
-#mainBox>img:hover{
+#mainBox>div>img:hover{
     border-radius: 30%;
     transition: transform 500ms ease-in-out;
     transform: scale(1.5);
 }
 
-#mainBox>h1{
+#mainBox h1{
     font-size: 54px;
     margin-top: -10px;
     margin-bottom: -10px;
@@ -317,7 +317,7 @@ body{
     font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
-#mainBox>p{
+#mainBox p{
     font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 24px;
 }
@@ -340,9 +340,6 @@ body{
 
 #logoName{
     display: flex;
-    width: max-content;
-    font-size: 12px;
-    justify-content: space-between;
 }
 
 #logoName>div{
@@ -355,24 +352,6 @@ body{
     color: black;
     position: relative;
     font-weight: 600;
-}
-#logoName>div:nth-child(1){
-    left:  -75px;
-}
-#logoName>div:nth-child(2){
-    left:  -44px;
-}
-#logoName>div:nth-child(3){
-    left:  -25px;
-}
-#logoName>div:nth-child(4){
-    left:  -8px;
-}
-#logoName>div:nth-child(5){
-    left:  17px;
-}
-#logoName>div:nth-child(6){
-    left:  47px;
 }
 
 .visibleName{
@@ -388,15 +367,12 @@ body{
 #aboutMe>div{
   width: 500px;
   height: 300px;
-  background-color: transparent;
   font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 18px;
-  position: relative;
   text-align: justify;
   line-height: 25px;
-  top: 25%;
-  left: 50%;
   border-radius: 15px;
+  margin: 25px auto;
 }
 
 #wave{
@@ -430,11 +406,9 @@ body{
   background-color: transparent;
   font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 18px;
-  position: relative;
+  margin: 25px auto;
   text-align: justify;
   line-height: 25px;
-  top: 25%;
-  left: 50%;
   border-radius: 15px;
   perspective: 1000px
 }
@@ -462,9 +436,6 @@ body{
 }
 
 #techStack .back b{
-  position: absolute;
-  top: 20px;
-  width: 30%;
   left: 35%;
   font-size: 30px;
   text-align: center;
@@ -488,8 +459,8 @@ body{
 
 #skill>div>div:nth-child(1){
   display: grid;
+  width: fit-content;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
   column-gap: 10px;
   margin-bottom: 35px;
 }
@@ -509,6 +480,7 @@ body{
 
 #skill>div>div:nth-child(3){
   display: flex;
+  width: max-content;
   justify-content: space-around;
   text-align: center;
   margin: 15px auto 35px auto;
@@ -521,6 +493,7 @@ body{
   width: 160px;
   padding: 1%;
   border-radius: 10px;
+  margin-left: 15px;
 }
 
  /* gitstat */
@@ -584,9 +557,7 @@ body{
 
 #contact>form{
   width: 50%;
-  position: relative;
-  top: 0%;
-  right: -40%;
+  margin: auto;
 }
 
 #contact>form>input{
@@ -648,20 +619,6 @@ margin: 25px 30%;
   cursor: pointer;
 }
 
-/* Theme button */
-#theme{
-  width: auto;
-  height: 30px;
-  border: none;
-  position: fixed;
-  top: 90%;
-  right: 2%;
-  color: #fff;
-  text-align: center;
-  padding-top: 10px;
-  cursor: pointer;
-  font-size: 10px;
-}
 
 /* credits */
 #credit{

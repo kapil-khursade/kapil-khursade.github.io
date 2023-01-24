@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="responive.css">
 </head>
 <body>
+
+
+    <!-- This is navbar -->
     <!-- This is background ripple effect -->
     <div  class='ripple-background'>
         <div class='circle xxlarge shade1'></div>
@@ -33,7 +36,8 @@
         <div class='circle mediun shade4'></div>
         <div class='circle small shade5'></div>
     </div>
-
+    
+    <header id="nav-wrapper">
       <!-- home button for mobile navbar-->
       <div id="mobHome" class="container" onclick="myFunction(this)">
         <div class="bar1"></div>
@@ -49,9 +53,6 @@
             <div><a href="#resume">Resume</a></div>
         </div>  
       </div>
-
-    <!-- This is navbar -->
-    <header id="nav-wrapper">
         <nav id="nav">
           <div class="nav right">
             <a href="#mainBox" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Home</span></span></a>
@@ -64,10 +65,10 @@
           </div>
         </nav>
       </header>
-
     
     <!-- This is about me section -->
     <section id="mainBox" >
+        <div>
         <img src='https://i.postimg.cc/vZTK09pv/photome-2.jpg' border='0' alt='photome-2'/>
         <h1  class="reveal-text">Kapil Khursade</h1>
         <p  class="reveal-text">Full Stack Web Developer</p>
@@ -86,7 +87,9 @@
             <div>Medium</div> 
             <div>Netlify</div>  
             <div>Github</div>
-        </div>         
+        </div>     
+        
+        </div>
     </section>
 
     <!-- About me section -->
@@ -301,7 +304,7 @@
  
   
 
-   <div id="theme" onclick="changeTheme(this)">Jhon Wick</div>
+
 </body>
 </html>
 
