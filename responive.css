@@ -392,7 +392,11 @@
      transform: scale(0.8);
    }
 
-  /* contact section */   
+  /* contact section */  
+  #contact>p{
+    font-size: 14px;
+  } 
+
   #contact>form{
     width: 80%;
     left: 0%;

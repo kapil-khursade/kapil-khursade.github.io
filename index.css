@@ -576,10 +576,16 @@ body{
 
 
 /* Message section */
+#contact>p{
+  font-size: 24px;
+  color: #fff;
+  margin-left: 25px;
+}
+
 #contact>form{
   width: 50%;
   position: relative;
-  top: 20%;
+  top: 0%;
   right: -40%;
 }
 
