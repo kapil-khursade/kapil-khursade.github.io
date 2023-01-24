@@ -673,9 +673,9 @@ margin: 25px 30%;
   margin: auto;
 }
 
+
 #credit>span{
   font-size: 10px;
   color: white;
-  overflow: visible;
-
+  width: max-content;
 }
