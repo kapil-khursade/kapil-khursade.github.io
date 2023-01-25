@@ -1,0 +1,327 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapil Khursade</title>
+    <!-- To show the logo in the title of website -->
+		<link
+        rel="icon"
+        href="https://i.postimg.cc/c4ZJTgYP/kklogo-no-bg.png"
+        type="image/x-icon"
+    />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+  />
+
+    <!-- jquery script -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://kit.fontawesome.com/32f181d7c4.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responive.css">
+</head>
+<body>
+
+
+    <!-- This is navbar -->
+    <!-- This is background ripple effect -->
+    <div  class='ripple-background'>
+        <div class='circle xxlarge shade1'></div>
+        <div class='circle xlarge shade2'></div>
+        <div class='circle large shade3'></div>
+        <div class='circle mediun shade4'></div>
+        <div class='circle small shade5'></div>
+    </div>
+    
+    <header id="nav-wrapper">
+      <!-- home button for mobile navbar-->
+      <div id="mobHome" class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="mobBar">
+            <div><a href="#mainBox">Home</a></div>
+            <div><a href="#aboutMe">About Me</a></div>
+            <div><a href="#TechStack">Tech Stack</div>
+            <div><a href="#skill">Skills</div>
+            <div><a href="#project">Projects</a></div>
+            <div><a href="#contact">Contact</a></div>
+            <div><a href="#resume">Resume</a></div>
+        </div>  
+      </div>
+        <nav id="nav">
+          <div class="nav right">
+            <a href="#mainBox" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Home</span></span></a>
+            <a href="#aboutMe" class="nav-link"><span class="nav-link-span"><span class="u-nav">About Me</span></span></a>
+            <a href="#TechStack" class="nav-link"><span class="nav-link-span"><span class="u-nav">Tech Stack</span></span></a>
+            <a href="#skill" class="nav-link"><span class="nav-link-span"><span class="u-nav">Skills</span></span></a>
+            <a href="#project" class="nav-link"><span class="nav-link-span"><span class="u-nav">Project</span></span></a>
+            <a href="#contact" class="nav-link"><span class="nav-link-span"><span class="u-nav">Contact Me</span></span></a>
+            <a href="#resume" class="nav-link"><span class="nav-link-span"><span class="u-nav">Resume</span></span></a>
+          </div>
+        </nav>
+      </header>
+    
+    <!-- This is about me section -->
+    <section id="mainBox" >
+        <div>
+        <img src='https://i.postimg.cc/vZTK09pv/photome-2.jpg' border='0' alt='photome-2'/>
+        <h1  class="reveal-text">Kapil Khursade</h1>
+        <p  class="reveal-text">Full Stack Web Developer</p>
+        <div id="logo">
+            <a href="mailto: kapilkhursade.210@gmail.com" target="_blank" rel="noopener"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvectorified.com%2Fimages%2Femail-icon-white-transparent-3.png&f=1&nofb=1&ipt=d4372fdb4897341893d6aa9c1eb2f23948e941c011e86faca1fd147322299413&ipo=images" alt="email" onmouseenter="visName(1)" onmouseleave="hidName(1)"></a>
+            <a href="https://www.linkedin.com/in/kapilkhursadefwd/"  target="_blank" rel="noopener"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Flinkedin-icon-logo-black-and-white.png&f=1&nofb=1&ipt=7640faf20045691cec37faf877d77093fb3ffd26c178f8e34561fdce534baa5a&ipo=images" alt="linkdin" class="linkdin" onmouseenter="visName(2)" onmouseleave="hidName(2)"></a>
+            <a href="https://www.instagram.com/kapilkkhursade/" target="_blank" rel="noopener"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipartcraft.com%2Fimages%2Finstagram-transparent-logo-dark-8.png&f=1&nofb=1&ipt=fc40700aa3c0e46ca2f41342e370547bdbb955c303781040d7072c853edebe46&ipo=images" alt="instagram" onmouseenter="visName(3)" onmouseleave="hidName(3)"></a>
+            <a href="https://medium.com/@kapilkhursade.210" target="_blank" rel="noopener"> <img src="https://cdn.iconscout.com/icon/free/png-256/medium-3855923-3201557.png" alt="medium" onmouseenter="visName(4)" onmouseleave="hidName(4)"></a>
+            <a href="https://app.netlify.com/teams/kapil-khursade/sites" target="_blank" rel="noopener">   <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fnetlify-logo-black-and-white.png&f=1&nofb=1&ipt=a4f1fc188a71cf69d114d22d1725d16f6d21fbc46815317835cd479ad22fe254&ipo=images" alt="Netlify" onmouseenter="visName(5)" onmouseleave="hidName(5)"></a>
+            <a href="https://github.com/kapil-khursade" target="_blank" rel="noopener"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Fgithub-icon-white%2Fgithub-icon-white-6.jpg&f=1&nofb=1&ipt=a81588749d7495334610aa672b544a55600543bca8c97e98ef16eb31da41d4a0&ipo=images" alt="github" onmouseenter="visName(6)" onmouseleave="hidName(6)"></a>
+        </div>
+        <div id="logoName">
+            <div>Email</div>
+            <div>Linkdin</div>
+            <div>Instagram</div>
+            <div>Medium</div> 
+            <div>Netlify</div>  
+            <div>Github</div>
+        </div>     
+        
+        </div>
+    </section>
+
+    <!-- About me section -->
+    <section id="aboutMe" >
+       <span>About Me</span>
+       <div class="cardBox">
+        <div class="cardBoxFull">
+            <div class="front">
+                <q> <span>Hi</span>
+                    <img id="wave" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Femoji.gg%2Fassets%2Femoji%2Fwavegif_1860.gif&f=1&nofb=1&ipt=b9ebe3c2cb7329abf8bf2baaf7d7740c14494cfc0b35f59f2cb8bd0faebbb974&ipo=images" alt="wave">
+                    I'm a Full-Stack Web Developer with the touch of creativity and passion for developing interactive
+                    websites. I love order and commited to quality, exprimenting and experinencing in what I beilve
+                    firmly.
+                   </q>
+            </div>
+            <div class="back">
+                <span><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetdrawings.com%2Ffree-icon-bw%2Flocation-icon-png-transparent-2.png&f=1&nofb=1&ipt=1b2ab8e597b413d89b5ea0b4ac24c00320e80c2e16fe49864cf317919fea79fd&ipo=images" alt="location">Pune, Maharashtra.</span>
+                <span><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_401303.png&f=1&nofb=1&ipt=b373c9c05f1b4db624cdb2429b85f42ba15e43bb66288c592ff1d20f4ce8e480&ipo=images" alt="age">25years</span>
+            </div>
+        </div>
+       </div>
+    </section>
+
+    <!-- TechStack section -->
+    <section id="TechStack">
+        <span>Tech Stack</span>
+
+        <div class="cardBox">
+            <div class="cardBoxFull">
+                <div class="front">
+                    <!-- here will be the logo of the TechStack -->
+                    <b>Front End</b>
+                     <img src="images\pngfind.com-html-5-logo-png-6834215.png" alt="">
+                </div>
+                <div class="back">
+                    <!-- here will be the few lines about the skill mentionng the soft TechStack -->
+                   <div>
+                    <b>Back End</b>
+                      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.vexels.com%2Fmedia%2Fusers%2F3%2F166401%2Fisolated%2Fpreview%2Fb82aa7ac3f736dd78570dd3fa3fa9e24-java-programming-language-icon-by-vexels.png&f=1&nofb=1&ipt=6ae323b2125865793170d774905ee961a217e448e89d2897d96bdb3997c40e58&ipo=images" alt="">
+                   </div>
+                   <div>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fmysql-5-logo-png-transparent.png&f=1&nofb=1&ipt=ff14e1a81927629202ab1cf9ff563cfc693386a3d59fc39a374adcdbe18b93fb&ipo=images" alt="">
+                   </div>
+                   <div>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feditorconfig.org%2Flogos%2Fmaven.png&f=1&nofb=1&ipt=a07cd99a152431d302faab3c5a7ee52f6296bb1b30d26b038525d601c2c1d4dd&ipo=images" alt="">
+                   </div>
+                   <div>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.oscarblancarteblog.com%2Fwp-content%2Fuploads%2F2014%2F09%2FHibernate-logo1-e1429932456458.png&f=1&nofb=1&ipt=332632a92c239259d9c3c62e7ddfe9dd04fe523305d05ad4bdce0c1ec7f89fa5&ipo=images" alt="">
+                   </div>
+                   <div>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fliveit-media.imgix.net%2Fmedia%2Fevent%2Fmy-first-event-1461%2Flogo-spvnih.png%3Fw%3D600&f=1&nofb=1&ipt=f7065b84fe400db4df2bf49647e1ca81edeb356ce770743fbff95910acf504a5&ipo=images" alt="">
+                   </div>
+                   <div>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.t2ti.com%2Fimages%2Fsiscom-spring%2Fspring.png&f=1&nofb=1&ipt=14f28926cb8787cb8877d54438a199d391fd92c34a38b819d8385c55ebf5e42c&ipo=images" alt="">
+                   </div>
+                   <div>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogonoid.com%2Fimages%2Fintellij-idea-logo.png&f=1&nofb=1&ipt=5c1eb485a1d269618ca023abdd2fb86650b261d0fd5696aac179b16958f30d4c&ipo=images" alt="">
+                   </div>
+                   <div>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fraw.githubusercontent.com%2Fdhanishgajjar%2Fvscode-icons%2Fmaster%2Fpng%2Fdefault_dark.png&f=1&nofb=1&ipt=f1e4b0a04048ae6398822398d9e1a7a58eb58f4c10d0ca82ab92245b1aab64be&ipo=images" alt="">
+                   </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skill">
+        <span>Skills</span>
+        <div>
+            <div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Front End Development</h3>
+                    <p>Can create single page interactive web pages with the help of Javascript-Html-Css.</p>
+                </div>
+                <div>
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <h3>Back End Development</h3>
+                    <p>Can write efficient and effective Java code to handel database and perform CRUD operation on it.</p>
+                </div>
+                <div>
+                    <i class="fa fa-cubes" aria-hidden="true"></i>
+                    <h3>Data Structures and Algorithms</h3>
+                    <p>Can solve the real life problem using the concepts such as Stack, Queue, Recursion and etc.</p>
+                </div>
+                <div>
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <h3>Communication Skills</h3>
+                    <p>Can hear others and express my ideas in a consize manner.</p>
+                </div>
+            </div>
+            <span>My Advantage</span>
+            <div>
+                <div>
+                    <b>1000+ Hours of Coding</b>
+                </div>
+                <div>
+                    <b>More than 500 Hours Of DSA</b>
+                </div>
+                <div>
+                    <b>100+ Hours of Soft Skill training at Masai</b>
+                </div>
+                <div>
+                    <b>100+ meaningfull Git Commits</b>
+                </div>
+                <div>
+                    <b>3 Collaborative Project</b>
+                </div>
+                <div>
+                    <b>5+ individual minor projects</b>
+                </div>
+            </div>
+            <span>My Git Contribution</span>
+            <div>
+                <div class="calendar">
+                    <!-- Loading stuff  -->
+                   Loading the data just for you.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="project">
+        <span>Projects</span>
+        <div>
+            <div>
+                <img src="images/covidproofapp.png" alt="CovidProofApp">
+                <h3>Covid Proof App</h3>
+                <h5>A Vaccine Booking Application for user and Vaccination logistic management for admin
+                   using frontend and backend technology. 
+                </h5>
+                <h5>Individaul project build by me in two weeks</h5>
+                <p>JAVA | Spring Boot | Html-Css-Javascript</p>
+                <a href="https://github.com/kapil-khursade/coivdProofApp" target="_blank"><button class="button">CODE <i class="fa-brands fa-github"></i></button></a>
+                <a href="https://drive.google.com/file/d/1l8RTxql9P0tVijJ3Gvblk7uOXtrs0u2C/view" target="_blank"><button class="button">Video <i class="fa fa-play-circle" aria-hidden="true"></i></button></a>
+            </div>
+            <div>
+                <img src="images/mnrega.png" alt="Mnrega">
+                <h3>MNREGA - Database Managemet System</h3>
+                <h5>
+                    A console based Database Management project, managing the database for the MNREGA scheme using JAVA and MYSQL.
+                    BDO and Gram Pancyant Memeber can manage the data.
+                </h5>
+                <h5>Individaul Project build in 5 days at Masai in Unit 5</h5>
+                <p>JAVA | Maven | Hibernate | JDBC | MySQL</p>
+                <a href="https://github.com/kapil-khursade/MNREGA-Database" target="_blank"><button class="button">CODE <i class="fa-brands fa-github"></i></button></a>
+                <a href="https://drive.google.com/file/d/1c8GlUEs5cSmddY2VQQQIFesK67GpeMaZ/view?usp=sharing" target="_blank"><button class="button">Video <i class="fa fa-play-circle" aria-hidden="true"></i></button></a>
+            </div>
+            <div>
+                <img src="images/myGlmPro.png" alt="MyGlamme">
+                <h3>MyGlamm</h3>
+                <h5>
+                    A Clone of MyGlamm, an Indian e-commerce company that sells cosmetics and personal care products.
+                    Worked in group of 5 as Team Lead
+                </h5>
+                <h5>Gained valuable experince of planning, organising and leadership</h5>
+                <p>Javascript | HTML | CSS | Fetch API | DOM</p>
+                <a href="https://github.com/kapil-khursade/MyGlamm" target="_blank"><button class="button">CODE <i class="fa-brands fa-github"></i></button></a>
+                <a href="https://myglammclonecw.netlify.app" target="_blank"><button class="button">Link <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                <a href="https://drive.google.com/file/d/1UBfQ9ZFNLipz3d53zPg3zuvYU-kGotWU/view?usp=sharing" target="_blank"><button class="button">Vedio <i class="fa fa-play-circle" aria-hidden="true"></i></button></a>
+            </div>
+            <div>
+                <img src="images/shepora.png" alt="Shepora">
+                <h3>Shepora</h3>
+                <h5>
+                    Cloned the e-commerced website Shephora.com in 5 days indiviual construct Week Project at Masai in unit 2.
+                    Applied the basic conepts of Javascript, HTML and CSS.
+                </h5>
+                <h5>Applied concepts of Local Storage, DOM and Event Listener etc</h5>
+                <p>Javascript | CSS | HTML</p>
+                <a href="https://github.com/kapil-khursade/Shephora.com" target="_blank"><button class="button">CODE <i class="fa-brands fa-github"></i></button></a>
+                <a href="https://secretive-form-5947.netlify.app/all_makeup.html" target="_blank"><button class="button">Link <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                <a href="" target="_blank"><button class="button">Vedio <i class="fa fa-play-circle" aria-hidden="true"></i></button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <span>Contact Me</span>
+        <p><i class="fa fa-mobile" aria-hidden="true"></i> 8605514442</p>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i> kapilkhursade.210@gmail.com</p>
+        <form action="https://formsubmit.co/kapilkhursade.210@gmail.com" method="POST">
+            <input type="text" name="name" required placeholder="Your Name">
+            <input type="email" name="email" required placeholder="Your Email To Get Back To You">
+            <textarea type="text" name="Your Message" required placeholder="Your Message"></textarea>
+            <input type="hidden" name="_next" value="https://kapil-khursade.github.io/thanks.html">
+            <button type="submit">Send</button>
+       </form>
+    </section>
+
+    <!-- This is to download resume -->
+    <section id="resume">
+        <span>Resume</span>
+        <div>
+            <a href="images/KapilKhursadeResume.pdf" target="_blank"><button>Preview Resume</button></a>
+            <a href="images/KapilKhursadeResume.pdf" download><button>Download Reusme</button></a>
+        </div>
+
+          <article id="credit">
+            <img src="https://i.postimg.cc/c4ZJTgYP/kklogo-no-bg.png" alt="logo">
+            <span>MADE WITH PASSION</span>
+            <span>Navbar Credit: onaircode.com/html-css-navbar-examples</span>
+            <span>Background Credit: freefrontend.com/css-ripple-effects/</span>
+        </article>
+    </section>
+    
+ 
+  
+
+
+</body>
+</html>
+
+<script src="index.js"></script>
+<script
+src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<script>
+    GitHubCalendar(".calendar", "kapil-khursade");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "kapil-khursade", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "kapil-khursade", {
+       proxy (username) {
+         return fetch(`https://your-proxy.com/github?user=${kapil-khursade}`)
+       }
+    }).then(r => r.text())
+</script>
