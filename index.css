@@ -338,17 +338,12 @@
 
 #logoName{
     display: flex;
+    width: 380px;
+    justify-content: space-between;
 }
 
-#logoName>div{
+#logoName>span{
     visibility: hidden;
-    width: min-content;
-    padding: 1%;
-    text-align: center;
-    border-radius: 8px;
-    background : white;
-    color: black;
-    position: relative;
     font-weight: 600;
 }
 
@@ -782,6 +777,7 @@ font-family: sans-serif;
     #resume>div{
         margin: auto;
         width: 200px;
+        height: 50vh;
     }
 
     #resume>div>div>a>button{
