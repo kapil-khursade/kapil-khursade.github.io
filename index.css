@@ -182,6 +182,8 @@
   /* bcakground */
   body{
     background-color: rgb(34, 32, 32);
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    overflow-x: hidden;
   }
 
   .ripple-background{
@@ -587,12 +589,13 @@
 #project{
     width: max-content;
     height: max-content;
-    margin: auto;
     padding-top: 12vh;
+    margin: auto;
 }
 
 #project>div{
     width: 80vw;
+    margin: auto;
     text-align: center;
 }    
 
@@ -644,36 +647,23 @@ font-family: sans-serif;
         margin-left: 10%;
         margin-bottom: 25px;
     }
-}
 
-@media only screen and (max-device-width : 640px){
-    #project{
-        margin-top: 10vh;
-    }
+    #project>div>div>div>a>button{
+      width: 60px;
+      height: 30px;
+      font-size: 10px;
+  }
 }
-
-@media only screen and (max-device-width : 480px){
-    #project{
-        margin-top: 30vh;
-    }
-}
-
-@media only screen and (max-device-width : 320px){
-    #project{
-        margin-top: 40vh;
-    }
-}
-
 
 /* contact me */
 #contact{
-    width: max-content;
+    width: fit-content;
     height: max-content;
     margin: auto;
 }
 
 #contact>div{
-    width: 800px;
+    width: 80vw;
     margin: auto;
     text-align: center;
     height: 100vh;
