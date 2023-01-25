@@ -575,7 +575,7 @@
 }
 
 @media only screen and (max-device-width : 1000px){
-    #skill>div>div:nth-child(4){
+    .calendar{
         display: none;
     }
 }
