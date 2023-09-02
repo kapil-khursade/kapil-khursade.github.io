@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kapil-khursade.github.io/static/css/main.1b0718ff.css",
+    "main.js": "/kapil-khursade.github.io/static/js/main.35aec3b2.js",
+    "index.html": "/kapil-khursade.github.io/index.html",
+    "main.1b0718ff.css.map": "/kapil-khursade.github.io/static/css/main.1b0718ff.css.map",
+    "main.35aec3b2.js.map": "/kapil-khursade.github.io/static/js/main.35aec3b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b0718ff.css",
+    "static/js/main.35aec3b2.js"
+  ]
+}
