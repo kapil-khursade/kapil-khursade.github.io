@@ -51,7 +51,7 @@ const Home = () => {
         )
     }
     return (
-        <Container id="home" className="text-center">
+        <Container id="home" className="text-center d-flex justify-content-center align-items-center vh-100">
             <Stack gap={3}>
                 <div className="p-5 mt-5">
                         <Image src="https://i.postimg.cc/vZTK09pv/photome-2.jpg" 

@@ -1,4 +1,5 @@
 //source - https://github.com/tsparticles/react-demo/blob/main/src/components/Particles.js
+import React from 'react';
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim"; 
 import { useCallback, useMemo } from "react";

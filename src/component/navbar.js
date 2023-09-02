@@ -12,6 +12,7 @@ const NavbarComponent = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav> {/* Empty Nav to push Nav.Links to the right */}
           <Nav className="justify-content-end">
+            <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about_me">About Me</Nav.Link>
             <Nav.Link href="#tech_stack">Tech Stack</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
