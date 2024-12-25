@@ -1,9 +1,0 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
-
-.full-screen-container {
-    width: 1130px;
-    height: 560px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
