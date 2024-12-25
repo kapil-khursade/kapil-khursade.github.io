@@ -2,7 +2,7 @@
   "name": "kapil-khursade.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kapil-khursade.github.io/portfolio",
+  "homepage": "https://gitname.github.io/react-gh-pages",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
