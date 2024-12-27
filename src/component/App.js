@@ -10,6 +10,7 @@ import Skills from './Skills.js';
 import Resume from './Resume.js';
 import Contact from './Contact.js';
 import Projects from './Projects.js';
+import Fotter from './Fotter.js';
 
 const App = () => {
 
@@ -17,7 +18,7 @@ const App = () => {
     <>
     <NavbarComponenet/> 
     <Container>
-    s<ParticleComponent/>
+      <ParticleComponent/>
       <MySection/>
       <AboutMe/>
       <TechStack/>
@@ -26,6 +27,7 @@ const App = () => {
       <Projects/>
       <Resume/>
     </Container>
+    <Fotter/>
     </>
   )
 }

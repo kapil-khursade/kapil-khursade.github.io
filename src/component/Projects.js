@@ -5,8 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { Button } from 'react-bootstrap';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
-import LinkIcon from '@mui/icons-material/Link';
+// import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
+// import LinkIcon from '@mui/icons-material/Link';
 
 function Projects() {
 
