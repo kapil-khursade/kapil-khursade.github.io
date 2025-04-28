@@ -21,7 +21,7 @@ const TechStack = () => {
                         </Tooltip>
                     }
                 >
-                    <Image src={imageSrc} className="language-image"/>
+                    <Image src={imageSrc} className="language-image" alt={name} onError={()=> {return name}}/>
                 </OverlayTrigger>    
         )
     }
@@ -29,13 +29,14 @@ const TechStack = () => {
     const LangaugeIconConfig = [{imageSrc: "https://i.ibb.co/2yc0z4p/ruby.png", name: "Ruby"},
                                 {imageSrc: "https://i.ibb.co/z4Ps8NF/javascript.png", name: "JavaScript"},
                                 {imageSrc: "https://i.ibb.co/k6Kjjtg/java.png", name: "Java"},
+                                {imageSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/150px-Python-logo-notext.svg.png", name: "Python"},
                                 {imageSrc: "https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg", name: "Postgres"},
                                 {imageSrc: "https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg", name: "My SQL"},
                                 ]
 
     const FramworkIconConfig = [{imageSrc: "https://seeklogo.com/images/R/rails-logo-DD0927D290-seeklogo.com.png", name: "Ruby On Rails"},
                                 {imageSrc: "https://www.svgrepo.com/show/303500/react-1-logo.svg", name: "React"},
-                                {imageSrc: "https://cdn.worldvectorlogo.com/logos/react-native-1.svg", name: "React Native"},
+                                {imageSrc: "https://reactnative.dev/img/header_logo.svg", name: "React Native"},
                                 {imageSrc: "https://www.vectorlogo.zone/logos/springio/springio-icon.svg", name: "Spring Boot"},
                                 ]
 
@@ -46,7 +47,7 @@ const TechStack = () => {
           id="tech_stack"
           className="text-center d-flex justify-content-center align-items-center vh-100"
         >
-          <Card className="bg-transparent">
+          <Card className="bg-transparent w-100">
             <Stack gap={3}>
               {/* Languages Section */}
               <Card>

@@ -29,7 +29,7 @@ const SocialLinks = () => {
     const iconLinksConfigObject = [
         {Icon: GitHub, link: "https://github.com/kapil-khursade", name: "Github"},
         {Icon: Email, link: "mailto: kapilkhursade.210@gmail.com", name: "Gmail"},
-        {Icon: LinkedIn, link: "//www.linkedin.com/in/kapilkhursadefwd/", name: "LinkedIn"},
+        {Icon: LinkedIn, link: "https://in.linkedin.com/in/kapilkhursadefwd?trk=public_post_follow-view-profile", name: "LinkedIn"},
         {Icon: Instagram, link: "https://www.instagram.com/kapilkkhursade/", name: "Instagram"},
     ]
     return (
