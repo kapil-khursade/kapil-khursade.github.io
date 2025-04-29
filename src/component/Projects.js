@@ -5,8 +5,9 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { Button } from 'react-bootstrap';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import Responsive from './subComponent/Responsive';
 // import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
-// import LinkIcon from '@mui/icons-material/Link';
+import LinkIcon from '@mui/icons-material/Link';
 
 function Projects() {
 
@@ -35,14 +36,35 @@ function Projects() {
             }
             ]
     },
+    {
+      image: "https://i.ibb.co/gFDSRbqv/portfolioss.png",
+      title: "Personal Portfolio In React Js",
+      description: "A portfolio website made in React Js and deployed on Github pages.",
+      buttons: [
+          {
+              title: "Repo",
+              link: "https://github.com/kapil-khursade/kapil-khursade.github.io",
+              Icon: GitHubIcon
+          },
+          {
+              title: "Link",
+              link: "https://kapil-khursade.github.io/",
+              Icon: LinkIcon
+          }
+          ]
+  },
   ];
 
-
+  const resObjForCardHeight = {
+    'Desktop': 'vh-100',
+    'Tablet': 'vh-auto p-2',
+    'Mobile': 'vh-auto p-2'
+  }
 
   return (
     <Container
     id="project"
-    className="d-flex justify-content-center align-items-center vh-100"
+    className={`d-flex justify-content-center align-items-center vh-auto p-2`}
     >
     <Row xs={1} md={2} className="g-4">
       {projectData.map((project, idx) => (
