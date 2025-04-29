@@ -1,18 +1,25 @@
 import React from "react";
 import { Container, Card, Row, Col, Image } from "react-bootstrap";
+import Responsive from "./subComponent/Responsive";
 
 const AboutMe = () => {
+  const resHeightObj = {
+    'Desktop': 'vh-100',
+    'Tablet': 'p-2',
+    'Mobile': 'p-2'
+  }
+
   return (
     <Container
       id="about_me"
-      className="d-flex justify-content-center align-items-center vh-100"
+      className={`d-flex justify-content-center align-items-center ${Responsive(resHeightObj)}`}
     >
       <Row className="align-items-center">
         {/* Image Section - Hidden below 500px */}
         <Col
           xs={12}
           md={5}
-          className="mb-4 mb-md-0 d-none d-sm-block"
+          className="d-flex justify-content-center align-items-center p-2"
         >
           <Image
             src="https://i.ibb.co/wSYCg8s/my-reshikesh-image.jpg"

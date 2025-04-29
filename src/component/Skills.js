@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
+import Responsive from './subComponent/Responsive';
 
 function skills() {
 
@@ -8,6 +9,7 @@ function skills() {
         { name: "Ruby", proficiency: 80 },
         { name: "JavaScript", proficiency: 85 },
         { name: "Java", proficiency: 70 },
+        { name: "Python", proficiency: 40 },
         { name: "HTML", proficiency: 90 },
         { name: "CSS", proficiency: 80 },
         { name: "React", proficiency: 75 },
@@ -16,12 +18,17 @@ function skills() {
         { name: "MySQL", proficiency: 70 },
         { name: "PostgreSQL", proficiency: 75 },
         ];
-      
+
+        const resObjForCardHeight = {
+          'Desktop': 'vh-100',
+          'Tablet': 'p-2',
+          'Mobile': 'p-2'
+        }  
       
         return (
             <Container
                 id="skills"
-                className="text-center d-flex justify-content-center align-items-center vh-100"
+                className={`text-center d-flex justify-content-center align-items-center ${Responsive(resObjForCardHeight)}`}
             >
             <Card className="">
               <Card.Header className="text-center mb-4">My Skills</Card.Header>

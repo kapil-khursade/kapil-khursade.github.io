@@ -7,8 +7,15 @@ import Image from 'react-bootstrap/Image';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import Container from 'react-bootstrap/Container';
+import Responsive from './subComponent/Responsive';
 
 const TechStack = () => {
+    
+    const resHeightObj = {
+      'Desktop': 'vh-100',
+      'Tablet': 'p-2',
+      'Mobile': 'p-2'
+    }
 
     const IconCompo = ({imageSrc, name}) =>{
         return(
@@ -45,7 +52,7 @@ const TechStack = () => {
     return (
         <Container
           id="tech_stack"
-          className="text-center d-flex justify-content-center align-items-center vh-100"
+          className={`text-center d-flex justify-content-center align-items-center ${Responsive(resHeightObj)}`}
         >
           <Card className="bg-transparent w-100">
             <Stack gap={3}>

@@ -6,11 +6,24 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { Badge } from 'react-bootstrap';
+import Responsive from './subComponent/Responsive';
 
 function Contact() {
 
   const form = useRef();
   const [messageSent, setMessageSent] = useState('FORM')
+
+  const resObjForCardWidth =  {
+    'Desktop': 'w-50',
+    'Tablet': 'w-100',
+    'Mobile': 'w-100'
+  }
+
+  const resObjForCardHeight = {
+    'Desktop': 'vh-100',
+    'Tablet': 'p-2',
+    'Mobile': 'p-2'
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -33,9 +46,9 @@ function Contact() {
   return (
     <Container
         id="contact_me"
-        className="d-flex justify-content-end align-items-center vh-100"
+        className={`d-flex justify-content-end align-items-center ${Responsive(resObjForCardHeight)}`}
     >
-      {messageSent=='FORM' && <Card className='w-100'>
+      {messageSent=='FORM' && <Card className={Responsive(resObjForCardWidth)}>
         <Card.Header className='text-center'>
           Drop Your Message!
           {
@@ -57,7 +70,7 @@ function Contact() {
               label="Your Name"
               className="mb-3"
             >
-              <Form.Control type="text" placeholder="John Doe" name="user_name"/>
+              <Form.Control type="text" placeholder="John Doe" name="user_name" required={true}/>
             </FloatingLabel>
 
             <FloatingLabel
@@ -68,8 +81,9 @@ function Contact() {
               <Form.Control
                 as="textarea"
                 placeholder="Leave a message here"
-                style={{ height: '100px' }}
+                style={{ height: '150px' }}
                 name="message"
+                required={true}
               />
             </FloatingLabel>
             <div className='d-flex justify-content-end'><Button variant="primary" type="submit">Send</Button></div>
