@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://kapil-khursade.github.io",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.6",
