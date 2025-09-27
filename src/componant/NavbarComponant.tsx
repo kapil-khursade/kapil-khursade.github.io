@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon, SunIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Projects", href: "/projects" },
+  { name: "Projects", href: "/#/projects" },
   { name: "Contact", href: "mailto:kapilkhursade.210@gmail.com" },
 ];
 

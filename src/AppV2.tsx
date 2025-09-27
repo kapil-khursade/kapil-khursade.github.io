@@ -3,9 +3,9 @@ import NavbarComponant from "./componant/NavbarComponant";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import BackgroundComponant from "./componant/BackgroundComponant";
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { createHashRouter, RouterProvider } from "react-router";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Home/>,
