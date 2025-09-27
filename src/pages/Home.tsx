@@ -5,7 +5,9 @@ function Home() {
     <div className="flex justify-center items-center p-6 min-h-[calc(100vh-80px)] mx-auto mesh-gradient-center overflow-hidden">
       <div className="grid grid-cols-1">
         <div className="flex flex-col md:flex-row md:items-center gap-10 pb-8">
-          <img src={"src/assets/portfolio_headshot.png"} width='128' height='128' />
+          <img src={"https://raw.githubusercontent.com/kapil-khursade/kapil-khursade.github.io/refs/heads/master/src/assets/portfolio_headshot.png"} width='128' height='128' 
+               alt="headshot potrait of kapil"
+          />
           <h1 className="text-2xl font-semibold tracking-wide text-balance text-gray-900 sm:text-6xl dark:text-white">
             Hey, I'm <span className="dark:text-purple-400" >Kapil</span> 👋 <br /> A <span className="dark:text-purple-400" >Software Developer</span>.
           </h1>
