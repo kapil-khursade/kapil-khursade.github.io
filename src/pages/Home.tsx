@@ -1,39 +1,115 @@
+import HomePageCard from "../componant/HomePageCard";
 import SocialLinks from "../componant/SocialLinks";
 import { AtSymbolIcon, CodeBracketSquareIcon } from "@heroicons/react/24/outline";
 
+const digitalExpirenceArr = [
+  {
+    title: "What can I do?",
+    subtitle: "I can help develop solutions that will help you grow your business:",
+    icon: "ComputerDesktopIcon",
+    content: [{
+      heading: "UI/UX Design"
+    },
+    {
+      heading: "Fullstack Web Development"
+    },
+    {
+      heading: "Mobile App Development"
+    },
+    {
+      heading: "Database Design"
+    },
+    {
+      heading: "API Integration"
+    },
+    ]
+  },
+  {
+    title: "Tools I use.",
+    subtitle: "I use the latest tools and technologies to build functional and scalable products:",
+    icon: "Stack",
+    content: [  {
+    heading: "Frontend",
+    desc: "React Native, React, Tailwind CSS, TypeScript, JSX",
+  },
+  {
+    heading: "Backend",
+    desc: "Node.js, Ruby on Rails, Express Js, SpringBoot, PostgreSQL",
+  },
+  {
+    heading: "Design",
+    desc: "Canva, Picsart",
+  },
+    ]
+  },
+  {
+    title: "My Skills.",
+    subtitle: "I can help develop solutions that will help you grow your business:",
+    icon: "Puzzle",
+    content: [{
+      heading: "Documentation",
+      desc: "Reading and understanding doc, writing them."
+    },
+    {
+      heading: "Debugging and Testing",
+      desc: "Have an understanding to debugging tools like React debugger, Postman."
+    },
+    ]
+  },
+
+]
+
 function Home() {
   return (
-    <div className="flex justify-center items-center p-6 min-h-[calc(100vh-80px)] mx-auto mesh-gradient-center overflow-hidden">
-      <div className="grid grid-cols-1">
-        <div className="flex flex-col md:flex-row md:items-center gap-10 pb-8">
-          <img src={"https://raw.githubusercontent.com/kapil-khursade/kapil-khursade.github.io/refs/heads/master/src/assets/portfolio_headshot.png"} width='128' height='128' 
-               alt="headshot potrait of kapil"
-          />
-          <h1 className="text-2xl font-semibold tracking-wide text-balance text-gray-900 sm:text-6xl dark:text-white">
-            Hey, I'm <span className="dark:text-purple-400" >Kapil</span> 👋 <br /> A <span className="dark:text-purple-400" >Software Developer</span>.
-          </h1>
-        </div>
-        <p className="text-xl max-w-[750px] text-black dark:text-white">
-          As a skilled <span className="font-bold ">Ruby on Rails and React Native developer</span>, I specialize in building scalable, high-performance web and
-          mobile applications. With expertise in backend development, API integrations, and frontend frameworks, I craft
-          seamless user experiences. Passionate about <span className="font-bold tracking-[-0.04px]">clean code, agile methodologies, and problem-solving</span>, I continuously
-          explore new technologies to enhance development efficiency.
-        </p>
-        <div className="flex flex-col gap-8 lg:gap-0 lg:flex-row lg:items-center justify-between max-w-[600px] mt-8">
-          <div className="flex gap-2 lg:gap-4">
-            <a href="mailto:kapilkhursade.210gmail.com" 
-            className='gap-2 border-black dark:border-white border rounded-md inline-flex items-center justify-center py-3 px-3 text-center text-base font-medium text-black dark:text-white hover:bg-white/10 dark:hover:bg-white/10 cursor-pointer'>
-              <AtSymbolIcon  aria-hidden="true" className="size-6 stroke-black dark:stroke-white" /> Contact Me
-            </a>
-            <button className='gap-2 border-black dark:border-white border rounded-md inline-flex items-center justify-center py-3 px-3 text-center text-base font-medium text-black dark:text-white hover:bg-white/10 dark:hover:bg-white/10 cursor-pointer'>
-              <CodeBracketSquareIcon  aria-hidden="true" className="size-6 stroke-black dark:stroke-white" /> Resume
-            </button>
+    <section>
+      <div className="flex justify-center items-center p-6 min-h-[calc(100vh-80px)] mx-auto mesh-gradient-center overflow-hidden">
+        <div className="grid grid-cols-1">
+          <div className="flex flex-col md:flex-row md:items-center gap-10 pb-8">
+            <img src={"https://raw.githubusercontent.com/kapil-khursade/kapil-khursade.github.io/refs/heads/master/src/assets/portfolio_headshot.png"} width='128' height='128'
+              alt="headshot potrait of kapil"
+            />
+            <h1 className="text-2xl font-semibold tracking-wide text-balance text-gray-900 sm:text-6xl dark:text-white">
+              Hey, I'm <span className="dark:text-purple-400" >Kapil</span> 👋 <br /> A <span className="dark:text-purple-400" >Software Developer</span>.
+            </h1>
           </div>
-          <div data-orientation="vertical" role="none" className="shrink-0 w-[1px] bg-black dark:bg-white h-4 hidden lg:block"></div>
-          <SocialLinks />
+          <p className="text-xl max-w-[750px] text-black dark:text-white">
+            As a skilled <span className="font-bold ">Ruby on Rails and React Native developer</span>, I specialize in building scalable, high-performance web and
+            mobile applications. With expertise in backend development, API integrations, and frontend frameworks, I craft
+            seamless user experiences. Passionate about <span className="font-bold tracking-[-0.04px]">clean code, agile methodologies, and problem-solving</span>, I continuously
+            explore new technologies to enhance development efficiency.
+          </p>
+          <div className="flex flex-col gap-8 lg:gap-0 lg:flex-row lg:items-center justify-between max-w-[600px] mt-8">
+            <div className="flex gap-2 lg:gap-4">
+              <a target="_blank" href="mailto:kapilkhursade.210@gmail.com"
+                className='gap-2 border-black dark:border-white border rounded-md inline-flex items-center justify-center py-1 px-3 text-center text-base font-medium text-black dark:text-white hover:bg-white/10 dark:hover:bg-white/10 cursor-pointer'>
+                <AtSymbolIcon aria-hidden="true" className="size-4 stroke-black dark:stroke-white" /> E-Mail Me
+              </a>
+              <a target="_blank" href="https://raw.githubusercontent.com/kapil-khursade/kapil-khursade.github.io/refs/heads/master/src/assets/resume.pdf"
+                className='gap-2 border-black dark:border-white border rounded-md inline-flex items-center justify-center py-1 px-3 text-center text-base font-medium text-black dark:text-white hover:bg-white/10 dark:hover:bg-white/10 cursor-pointer'>
+                <CodeBracketSquareIcon aria-hidden="true" className="size-6 stroke-black dark:stroke-white" /> Resume
+              </a>
+            </div>
+            <div data-orientation="vertical" role="none" className="shrink-0 w-[1px] bg-black dark:bg-white h-4 hidden lg:block"></div>
+            <SocialLinks />
+          </div>
         </div>
       </div>
-    </div>
+      {/* Summery of my skills */}
+      <div className="flex justify-center items-center py-6 min-h-[calc(100vh-80px)] mx-auto mesh-gradient-center overflow-hidden">
+        <div className="grid grid-cols-1 gap-2">
+          <h2 className="text-2xl font-semibold tracking-wide text-balance text-gray-900 sm:text-6xl dark:text-white">
+            Building a tech expirence.
+          </h2>
+          <p className="text-gray-700 dark:text-gray-400">
+            I specialize in creating stunning user interfaces and developing high-quality applications that stand out.
+          </p>
+
+          <div className="lg:max-w-[750px] grid lg:grid-cols-2 lg:gap-10 gap-2 lg:mt-8">
+            {digitalExpirenceArr.map((item) => <HomePageCard {...item} />)}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 

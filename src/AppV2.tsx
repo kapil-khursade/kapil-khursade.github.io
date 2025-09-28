@@ -21,7 +21,7 @@ export default function App() {
     <div className="bg-white">
       <NavbarComponant />
       <BackgroundComponant>
-      <RouterProvider router={router} />,
+      <RouterProvider router={router} />
       </BackgroundComponant>
     </div>
   );
