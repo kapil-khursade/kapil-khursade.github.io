@@ -36,7 +36,10 @@ function NavbarComponant() {
           aria-label="Global"
           className="w-2/3 flex items-center justify-between py-6 lg:px-8 fixed"
         >
-          <div className="flex lg:flex-1">
+          <div className="flex lg:flex-1 gap-2">
+            <img src={"https://raw.githubusercontent.com/kapil-khursade/kapil-khursade.github.io/refs/heads/master/src/assets/kk_code-removebg.png"} width='25' height='25' 
+                alt="logo"
+            />
             <a href="#" className="-m-1.5 p-1.5">
               <h5 className="text-1xl font-semibold tracking-tight text-balance text-gray-900 sm:text-2xl dark:text-white">
                 Kapil Khursade
