@@ -1,4 +1,5 @@
 import SocialLinks from "../componant/SocialLinks";
+import { AtSymbolIcon, CodeBracketSquareIcon } from "@heroicons/react/24/outline";
 
 function Home() {
   return (
@@ -20,11 +21,12 @@ function Home() {
         </p>
         <div className="flex flex-col gap-8 lg:gap-0 lg:flex-row lg:items-center justify-between max-w-[600px] mt-8">
           <div className="flex gap-2 lg:gap-4">
-            <button className='border-black dark:border-white border rounded-md inline-flex items-center justify-center py-3 px-3 text-center text-base font-medium text-black dark:text-white hover:bg-gray-4 dark:hover:bg-dark-3'>
-              Contact Me
-            </button>
-            <button className='border-black dark:border-white border rounded-md inline-flex items-center justify-center py-3 px-3 text-center text-base font-medium text-black dark:text-white hover:bg-gray-4 dark:hover:bg-dark-3'>
-              View Projects
+            <a href="mailto:kapilkhursade.210gmail.com" 
+            className='gap-2 border-black dark:border-white border rounded-md inline-flex items-center justify-center py-3 px-3 text-center text-base font-medium text-black dark:text-white hover:bg-white/10 dark:hover:bg-white/10 cursor-pointer'>
+              <AtSymbolIcon  aria-hidden="true" className="size-6 stroke-black dark:stroke-white" /> Contact Me
+            </a>
+            <button className='gap-2 border-black dark:border-white border rounded-md inline-flex items-center justify-center py-3 px-3 text-center text-base font-medium text-black dark:text-white hover:bg-white/10 dark:hover:bg-white/10 cursor-pointer'>
+              <CodeBracketSquareIcon  aria-hidden="true" className="size-6 stroke-black dark:stroke-white" /> Resume
             </button>
           </div>
           <div data-orientation="vertical" role="none" className="shrink-0 w-[1px] bg-black dark:bg-white h-4 hidden lg:block"></div>

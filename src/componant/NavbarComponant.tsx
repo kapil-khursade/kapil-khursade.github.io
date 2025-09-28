@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon, SunIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import ModeDropdown from "./ModeDropdown";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -9,7 +10,7 @@ const navigation = [
 ];
 
 const beforeScrollClass = "flex place-items-center sticky top-0 z-50 py-4 h-[80px] dark:bg-black"
-const onScrollClass = "flex place-items-center sticky top-0 z-50 py-4 h-[80px] backdrop-blur-2xl dark:bg-transparent border-border border-b-1"
+const onScrollClass = "flex place-items-center sticky top-0 z-50 py-4 h-[80px] backdrop-blur-2xl dark:bg-transparent"
 
 function NavbarComponant() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ function NavbarComponant() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 92) {
         setScrolled(true);
       }else{
         setScrolled(false)
@@ -64,12 +65,7 @@ function NavbarComponant() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <button
-              type="button"
-              className="inline-flex items-center gap-2 rounded-xl bg-gray-50 p-2 text-gray-800 hover:bg-gray-200 focus:outline-none cursor-pointer"
-            >
-              <SunIcon aria-hidden="true" className="size-6" />
-            </button>
+            <ModeDropdown />
           </div>
         </nav>
       </div>
@@ -102,14 +98,6 @@ function NavbarComponant() {
                     {item.name}
                   </a>
                 ))}
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  <SunIcon aria-hidden="true" className="size-6" />
-                </a>
               </div>
             </div>
           </div>
