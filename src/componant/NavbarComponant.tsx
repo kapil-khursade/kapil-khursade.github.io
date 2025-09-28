@@ -6,7 +6,7 @@ import ModeDropdown from "./ModeDropdown";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Projects", href: "/#/projects" },
-  { name: "Contact", href: "mailto:kapilkhursade.210@gmail.com" },
+  { name: "Contact", href: "/#/contact" },
 ];
 
 const beforeScrollClass = "flex place-items-center sticky top-0 z-50 py-4 h-[80px] dark:bg-black"

@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import BackgroundComponant from "./componant/BackgroundComponant";
 import { createHashRouter, RouterProvider } from "react-router";
+import Contact from "./pages/Contact";
 
 const router = createHashRouter([
   {
@@ -13,6 +14,10 @@ const router = createHashRouter([
   {
     path: "/projects",
     element: <Projects/>,
+  },
+  {
+    path: "/contact",
+    element: <Contact/>,
   },
 ]);
 
