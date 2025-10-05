@@ -34,7 +34,7 @@ function Contact() {
 
 
     return (
-        <div className="flex justify-center items-center p-6 min-h-[calc(100vh-80px)] mx-auto mesh-gradient-center overflow-hidden">
+        <div className="flex justify-center items-center lg:p-6 min-h-[calc(100vh-80px)] mx-auto mesh-gradient-center overflow-hidden">
             <div className="grid grid-cols-1 gap-2 rounded-lg border border-gray-10 bg-white dark:bg-transparent p-4 shadow-xs transition hover:shadow-lg sm:p-6">
                 <p className="text-center text-sm font-semibold tracking-wide text-balance text-gray-900 sm:text-4xl dark:text-purple-400">
                     Bringing your ideas to life. <br />
@@ -45,7 +45,7 @@ function Contact() {
                 </p>
                 <div className="w-full">
                     {messageSend==='' ?
-                    <form className="bg-white dark:bg-black rounded-lg border border-rose-10 shadow-md rounded px-8 pt-6 pb-8 mb-4" ref={form} onSubmit={sendEmail}>
+                    <form className="bg-white dark:bg-black rounded-lg border border-rose-10 shadow-md rounded px-2 lg:px-8 pt-6 pb-8 mb-4" ref={form} onSubmit={sendEmail}>
                         <div className="mb-4">
                             <label className="block text-black dark:text-white text-sm font-bold mb-2" htmlFor="username">
                                 Name
