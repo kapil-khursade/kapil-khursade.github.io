@@ -1,4 +1,3 @@
-import React from 'react'
 import { ASSETS_LINK } from '../constants/links';
 
 function ProjectPageCard(props: any) {
