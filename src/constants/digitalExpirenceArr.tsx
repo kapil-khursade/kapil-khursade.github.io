@@ -13,29 +13,14 @@ const digitalExpirenceArr = [
       heading: "Mobile App Development"
     },
     {
+      heading: "Data Engineering"
+    },
+    {
       heading: "Database Design"
     },
     {
       heading: "API Integration"
     },
-    ]
-  },
-  {
-    title: "Tools I use.",
-    subtitle: "I use the latest tools and technologies to build functional and scalable products:",
-    icon: "Stack",
-    content: [  {
-    heading: "Frontend",
-    desc: "React Native, React, Tailwind CSS, TypeScript, JSX",
-  },
-  {
-    heading: "Backend",
-    desc: "Node.js, Ruby on Rails, Express Js, SpringBoot, PostgreSQL",
-  },
-  {
-    heading: "Design",
-    desc: "Canva, Picsart",
-  },
     ]
   },
   {
@@ -52,7 +37,28 @@ const digitalExpirenceArr = [
     },
     ]
   },
-
+  {
+    title: "Tech Stack I use.",
+    subtitle: "I use the latest tools and technologies to build functional and scalable products:",
+    icon: "Stack",
+    content: [  {
+    heading: "Frontend",
+    desc: "React Native, React, Tailwind CSS, TypeScript, JSX",
+  },
+  {
+    heading: "Backend",
+    desc: "Node.js, Ruby on Rails, Express Js, SpringBoot, PostgreSQL",
+  },
+  {
+    heading: "AWS Cloud",
+    desc: "AWS S3, Redshift, Lambda, DynamoDB, CloudWatch, Glue, Athena, QuickSight, EC2",
+  },
+  {
+    heading: "Design",
+    desc: "Canva, Picsart",
+  },
+    ]
+  },
 ]
 
 export default digitalExpirenceArr;

@@ -72,6 +72,24 @@ let projectData = [
             }
         ]
     },
+    {
+        image: "honda_bi.png",
+        title: "Honda BI Dashboard",
+        description: "An interactive dashboard to visualize and analyze data for Honda's business intelligence needs.",
+        stack: ['AWS Glue', 'Redshift', 'S3', 'QuickSight'],
+        buttons: [
+            {
+                title: "Repo",
+                link: "",
+                Icon: <FaGithub />
+            },
+            {
+                title: "Link",
+                link: "",
+                Icon: <FaExternalLinkAlt />
+            }
+        ]
+    },
 ];
 
 export default projectData;
