@@ -1,1 +1,0 @@
-export const ASSETS_LINK = "https://raw.githubusercontent.com/kapil-khursade/kapil-khursade.github.io/refs/heads/master/src/assets/"
