@@ -1,20 +1,26 @@
-"use client";
-import { Routes, Route } from "react-router";
-import NavbarComponant from "./componant/NavbarComponant";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import BackgroundComponant from "./componant/BackgroundComponant";
+import Header from "./componants/Header";
+import Hero from "./componants/Hero";
+import About from "./componants/About";
+import Experience from "./componants/Experience";
+import Projects from "./componants/Projects";
+import Skills from "./componants/Skills";
+import EmailMe from "./componants/EmailMe";
+import Contact from "./componants/Contact";
 
 export default function App() {
   return (
-    <div className="bg-white">
-      <NavbarComponant />
-      <BackgroundComponant>
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
-      </BackgroundComponant>
+    <div className="portfolio-root">
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Skills />
+        <EmailMe />
+        <Contact />
+      </main>
+      <footer>Built by Kapil · Pune, India</footer>
     </div>
   );
 }
